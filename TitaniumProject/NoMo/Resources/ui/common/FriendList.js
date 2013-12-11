@@ -184,7 +184,8 @@ self.addEventListener('open', function() {
 
 		 });
 		 */
-	} else {	
+	} else {
+		self.remove(self.children[2]);
 		self.add(content);
 	}
 });
