@@ -1,0 +1,25 @@
+/*
+ * 
+ * 
+ */
+
+function Plan (userId){
+	
+	var cur_win = Ti.UI.getCurrentWindow;
+	
+	var planList = null;
+	if(planList){
+		
+		var self = Ti.UI.createTableView({
+			
+		});
+		
+	}else{
+		var self = Ti.UI.createView({
+			
+		});
+	}
+
+	return self;
+}
+module.exports = Plan;

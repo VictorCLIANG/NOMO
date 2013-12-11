@@ -1,0 +1,17 @@
+/*
+ * 
+ * 
+ */
+
+function Menu (){
+	
+	var cur_win = Ti.UI.getCurrentWindow;
+	
+	var self = Ti.UI.createView({
+		width:'40%',
+		backgroundColor:'#424240'
+	});
+
+	return self;
+}
+module.exports = Menu;

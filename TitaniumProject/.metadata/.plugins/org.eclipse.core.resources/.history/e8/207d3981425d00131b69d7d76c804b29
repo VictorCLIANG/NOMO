@@ -1,0 +1,19 @@
+
+function Main (userId){
+	var cur_userId= userId;
+	var self = Ti.UI.createWindow({
+		layout:'vertical',
+		backgroundColor:'#f7f7f7'
+	});
+	
+	var navbar = require('ui/common/NavigationBar');
+	var navigationBar = new navbar;
+	
+	alert(cur_userId);
+	
+	self.add(navigationBar);
+	
+	return self;
+	
+}
+module.exports = Main;

@@ -1,0 +1,57 @@
+ 
+function Main (userId){
+	var cur_userId= userId;
+	var self = Ti.UI.createWindow({
+		layout:'vertical',
+		backgroundColor:'#f7f7f7'
+	});
+	
+	// load navigation bar
+	var navbar = require('ui/common/NavigationBar');
+	var navigationBar = new navbar();
+
+	alert(cur_userId);
+	
+	self.add(navigationBar);
+	
+	// load menu bar
+	var menu = require('ui/common/Menu');
+	var menu_obj = new menu();
+	
+	// Creating View Structure
+	var mainViewGroup = Ti.UI.createView({
+		layout:'horizontal'
+	});
+	
+	var mainView = Ti.UI.createView({
+		backgroundColor:'#f7f7f7'
+	});
+	
+	
+	mainViewGroup.add(menu_obj);
+	mainViewGroup.add(mainView);
+	self.add(mainViewGroup);
+		
+	// load Friends View
+	var friendsLists = require('ui/common/FriendList');
+	var friendsList = new friendsLists(userId);
+	
+	// load plan View
+	var plans = require('ui/common/Plan');
+	var plan = new plans(userId);
+	
+	
+	mainView.addEventListener('swipe', function(e){
+		if(e.direction=='right'){
+			menu_obj.left = 0; // with no animation
+		}
+		
+		if (e.direction == 'left'){
+			menu_obj.left = '-40%';
+		}
+	});
+	
+	return self;
+	
+}
+module.exports = Main;

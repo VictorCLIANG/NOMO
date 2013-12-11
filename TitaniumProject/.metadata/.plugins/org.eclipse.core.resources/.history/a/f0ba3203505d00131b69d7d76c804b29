@@ -1,0 +1,16 @@
+/*
+ * 
+ * 
+ */
+
+function Plan (UserId){
+	
+	var cur_win = Ti.UI.getCurrentWindow;
+	
+	var self = Ti.UI.createTableView({
+		height:'10%',
+	});
+
+	return self;
+}
+module.exports = Plan;
