@@ -131,16 +131,16 @@ for (var i = 0; i < data.length; i++) {
 }
 
 var content = Ti.UI.createTableView({
-	id:'contentView',
+	id : 'contentView',
 	data : rowData,
 	layout : 'vertical'
 });
 
 self.addEventListener('open', function() {
 	if (friendList == null) {
-		
+
 		var emptyListContent = Ti.UI.createView({
-			id:'emptyListContent',
+			id : 'emptyListContent',
 			layout : 'vertical'
 		});
 		console.log("Friend List Empty");
@@ -172,18 +172,16 @@ self.addEventListener('open', function() {
 		emptyListContent.add(skipMessage);
 		emptyListContent.add(skipLink);
 		self.add(emptyListContent);
-		/*
-		 skipLink.addEventListener('click',function(e){
 
-		 var parentView = self.getParent();
-		 var plans = require('ui/common/Plan');
-		 var plan = new plans(userId);
+		skipLink.addEventListener('click', function(e) {
 
-		 parentView.remove(self);
-		 parentView.add(plan);
+			var plans = require('ui/common/Plan');
+			var plan = new plans(userId);
 
-		 });
-		 */
+			plan.open();
+
+		});
+
 	} else {
 		self.remove(self.children[2]);
 		self.add(content);
@@ -194,8 +192,7 @@ searchBar.addEventListener('return', function() {
 	if (friendList == null) {
 		friendList = 'somthing';
 		self.fireEvent('open');
-		
+
 	}
 });
-
 
