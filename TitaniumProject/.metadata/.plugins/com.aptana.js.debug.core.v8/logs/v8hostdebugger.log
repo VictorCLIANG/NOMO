@@ -1,0 +1,60 @@
+Logger started at: 2013年12月13日 星期五 上午12时44分02秒 NZDT
+Component: com.aptana.js.debug.core.v8
+Version: 3.0.0.1367525200
+[44:16.634] Recv: >1386848656635*version<
+[44:16.637] Sent: >32*1386848656635*1*3.0.0.1367525200<
+[44:16.638] Recv: >1386848656636*option*monitorXHR*true<
+[44:16.638] Sent: >42*1386848656636*!unknown option <monitorXHR><
+[44:16.638] Recv: >1386848656637*option*suspendOnFirstLine*false<
+[44:16.638] Sent: >13*1386848656637<
+[44:16.639] Recv: >1386848656638*option*suspendOnExceptions*false<
+[44:17.551] Sent: >13*1386848656638<
+[44:17.552] Recv: >1386848656639*option*stepFiltersEnabled*true<
+[44:17.552] Sent: >50*1386848656639*!unknown option <stepFiltersEnabled><
+[44:17.552] Recv: >1386848656640*option*suspendOnErrors*true<
+[44:18.63] Sent: >13*1386848656640<
+[44:18.63] Recv: >1386848656641*option*suspendOnKeywords*true<
+[44:18.63] Sent: >13*1386848656641<
+[44:18.63] Recv: >1386848656642*option*bypassConstructors*false<
+[44:18.63] Sent: >50*1386848656642*!unknown option <bypassConstructors><
+[44:18.63] Recv: >1386848656643*option*stepFiltersEnabled*true<
+[44:18.64] Sent: >50*1386848656643*!unknown option <stepFiltersEnabled><
+[44:18.64] Recv: >1386848656644*detailFormatters<
+[44:18.64] Sent: >13*1386848656644<
+[44:18.64] Recv: >1386848656645*enable<
+[44:18.65] Sent: >13*resumed*start<
+[44:18.65] Sent: >13*1386848656645<
+[44:18.67] Sent: >46*scripts*created*1|ti:/webview.js|anonymous|1|1<
+[44:18.67] Sent: >48*scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
+[44:18.67] Sent: >44*scripts*created*3|ti:/kroll.js|anonymous|1|1<
+[44:18.67] Sent: >49*scripts*created*4|ti:/properties.js|anonymous|1|1<
+[44:18.67] Sent: >45*scripts*created*5|ti:/events.js|anonymous|1|1<
+[44:18.67] Sent: >41*scripts*created*6|ti:/ui.js|anonymous|1|1<
+[44:18.67] Sent: >47*scripts*created*7|ti:/titanium.js|anonymous|1|1<
+[44:18.67] Sent: >47*scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
+[44:18.67] Sent: >46*scripts*created*9|ti:/console.js|anonymous|1|1<
+[44:18.67] Sent: >44*scripts*created*10|ti:/path.js|anonymous|1|1<
+[44:18.68] Sent: >47*scripts*created*11|ti:/invoker.js|anonymous|1|1<
+[44:18.68] Sent: >43*scripts*created*12|ti:/tab.js|anonymous|1|1<
+[44:18.68] Sent: >43*scripts*created*13|ti:/url.js|anonymous|1|1<
+[44:18.68] Sent: >46*scripts*created*14|ti:/window.js|anonymous|1|1<
+[44:18.68] Sent: >48*scripts*created*15|ti:/listview.js|anonymous|1|1<
+[44:18.68] Sent: >46*scripts*created*16|ti:/module.js|anonymous|1|1<
+[44:18.341] Sent: >46*scripts*created*17|app:///app.js|anonymous|1|1<
+[44:18.652] Sent: >80*scripts*created*18|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
+[44:18.920] Sent: >58*scripts*created*19|app:///ui/common/LogIn.js|anonymous|1|1<
+[44:27.602] Sent: >63*scripts*created*20|app:///ui/common/FriendList.js|anonymous|1|1<
+[44:27.820] Sent: >66*scripts*created*21|app:///ui/common/NavigationBar.js|anonymous|1|1<
+[44:28.598] Sent: >56*suspended*exception*app:///ui/common/NavigationBar.js*17<
+[44:28.598] Recv: >1386848656646*frames<
+[44:28.598] Sent: >131*1386848656646*0|NavigationBar||app:///ui/common/NavigationBar.js|17|false|322|22*1|||app:///ui/common/FriendList.js|14|false|247|23<
+[44:28.700] Recv: >1386848656647*variables*frame[0]<
+[44:34.314] Sent: >378*1386848656647*this|Object|o|[object Object]*rightBtnContainer|undefined|wl|undefined*addBtn|undefined|wl|undefined*menuBtn|undefined|wl|undefined*cur_win_id|undefined|wl|undefined*leftBtnContainer|undefined|wl|undefined*self|View|wol|[object View]*logoImg|undefined|wl|undefined*console|Object|wo|[object Object]*persistentObjects|Array|wo|[object Array]*gc|Function||[Function]<
+[44:37.838] Recv: >1386848656648*variables*frame[0].self<
+[44:37.840] Sent: >1552*1386848656648*bubbleParent|Boolean|w|true*id|String|w|"navBar"*touchEnabled|undefined|w|undefined*layout|undefined|w|undefined*backgroundSelectedImage|undefined|w|undefined*accessibilityLabel|undefined|w|undefined*backgroundFocusedImage|undefined|w|undefined*enabled|undefined|w|undefined*zIndex|undefined|w|undefined*backgroundPadding|undefined|w|undefined*right|undefined|w|undefined*parent|null|w|null*backgroundSelectedColor|undefined|w|undefined*backgroundColor|String|w|"#0424240"*backgroundFocusedColor|undefined|w|undefined*accessibilityHidden|undefined|w|undefined*_properties|Object|wo|[object Object]*bottom|undefined|w|undefined*focusable|undefined|w|undefined*backgroundRepeat|Boolean|w|false*height|String|w|"10%"*left|undefined|w|undefined*softKeyboardOnFocus|undefined|w|undefined*borderWidth|undefined|w|undefined*backgroundGradient|undefined|w|undefined*top|undefined|w|undefined*opacity|undefined|w|undefined*_hasJavaListener|undefined|w|undefined*backgroundDisabledColor|undefined|w|undefined*access...533<
+[44:42.496] Recv: >1386848656649*details*frame[0].self.parent<
+[44:42.497] Sent: >25*1386848656649*result*null<
+[44:45.978] Recv: >*resume<
+[44:45.979] Sent: >14*resumed*resume<
+[45:12.56] Recv: >*terminate<
+----------End of file----------

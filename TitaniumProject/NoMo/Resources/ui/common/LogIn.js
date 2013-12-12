@@ -86,7 +86,7 @@ function LogIn() {
 			navBarHidden : true,
 			modal : true,
 			url : 'FriendList.js',
-			userId : 1
+			userId : userId
 		});
 
 		friendListWindow.open();

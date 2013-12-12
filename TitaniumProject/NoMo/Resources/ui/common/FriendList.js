@@ -175,11 +175,21 @@ self.addEventListener('open', function() {
 
 		skipLink.addEventListener('click', function(e) {
 
-			var plans = require('ui/common/Plan');
-			var plan = new plans(userId);
+			var planWindow = Ti.UI.createWindow({
+				id : 'plansWin',
+				url : 'ui/common/Plan.js',
+				modal : true,
+				//fullscreen:true,
+				navBarHidden : true,
+				layout : 'vertical',
+				userId : userId,
+				backgroundColor : '#f7f7f7'
+			});
 
-			plan.open();
-
+			planWindow.open();
+			
+			self.close();
+			
 		});
 
 	} else {

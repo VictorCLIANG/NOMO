@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;NoMo/Resources/ui/common/Global.js&apos; to &apos;Globals.js&apos;" description="Rename resource &apos;Global.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/ui/common/Global.js" name="Globals.js" stamp="1386841117132" updateReferences="true"/>
+</session>

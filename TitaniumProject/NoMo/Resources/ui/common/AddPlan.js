@@ -243,7 +243,7 @@ function AddPlan(UserId) {
 
 	addBtn.addEventListener("click", function() {
 
-		Ti.App.planList = 1231;
+		Ti.App.isEmptyPlan = false;
 
 		self.close();
 

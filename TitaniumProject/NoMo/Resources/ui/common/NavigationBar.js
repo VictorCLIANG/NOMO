@@ -5,7 +5,7 @@
 
 function NavigationBar (){
 	
-	var cur_win = Ti.UI.getCurrentWindow;
+	//var cur_win_id = this.parent.id;
 	
 	var self = Ti.UI.createView({
 		id:'navBar',
@@ -41,17 +41,8 @@ function NavigationBar (){
 	});
 	
 	addBtn.addEventListener('click',function(){
-		var parentView = self.getParent();
-		var childViews = parentView.getChildren(1);
-		var mainViewGroup = childViews[1].getChildren();
-		var mainView = mainViewGroup[1];
-		mainView.removeAllChildren();
 		
-		var newAddPlans = require('ui/common/AddPlan');
-		var addPlan = new newAddPlans();
-		
-		mainView.add(addPlan);
-		
+		Ti.API.log("CurrentWindow : "+ cur_win_id);
 		//var cur_View = mainView.getChildren();
 		//console.log(mainView[0]);
 		
