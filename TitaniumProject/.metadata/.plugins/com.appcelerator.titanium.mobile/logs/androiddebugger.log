@@ -1,61 +1,48 @@
-Logger started at: 2013年12月13日 星期五 上午12时44分02秒 NZDT
+Logger started at: Friday, 13 December 2013 4:20:40 PM NZDT
 Component: com.appcelerator.titanium.mobile
 Version: 1.0.0.1379026748
-[44:16.634] Sent: >21*1386848656635*version<
-[44:16.637] Recv: >1386848656635*1*3.0.0.1367525200<
-[44:16.638] Sent: >36*1386848656636*option*monitorXHR*true<
-[44:16.638] Recv: >1386848656636*!unknown option <monitorXHR><
-[44:16.638] Sent: >45*1386848656637*option*suspendOnFirstLine*false<
-[44:16.638] Recv: >1386848656637<
-[44:16.638] Sent: >46*1386848656638*option*suspendOnExceptions*false<
-[44:17.551] Recv: >1386848656638<
-[44:17.551] Sent: >44*1386848656639*option*stepFiltersEnabled*true<
-[44:17.552] Recv: >1386848656639*!unknown option <stepFiltersEnabled><
-[44:17.552] Sent: >41*1386848656640*option*suspendOnErrors*true<
-[44:18.63] Recv: >1386848656640<
-[44:18.63] Sent: >43*1386848656641*option*suspendOnKeywords*true<
-[44:18.63] Recv: >1386848656641<
-[44:18.63] Sent: >45*1386848656642*option*bypassConstructors*false<
-[44:18.63] Recv: >1386848656642*!unknown option <bypassConstructors><
-[44:18.63] Sent: >44*1386848656643*option*stepFiltersEnabled*true<
-[44:18.64] Recv: >1386848656643*!unknown option <stepFiltersEnabled><
-[44:18.64] Sent: >30*1386848656644*detailFormatters<
-[44:18.64] Recv: >1386848656644<
-[44:18.64] Sent: >20*1386848656645*enable<
-[44:18.65] Recv: >resumed*start<
-[44:18.65] Recv: >1386848656645<
-[44:18.67] Recv: >scripts*created*1|ti:/webview.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*3|ti:/kroll.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*4|ti:/properties.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*5|ti:/events.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*6|ti:/ui.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*7|ti:/titanium.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*9|ti:/console.js|anonymous|1|1<
-[44:18.67] Recv: >scripts*created*10|ti:/path.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*11|ti:/invoker.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*12|ti:/tab.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*13|ti:/url.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*14|ti:/window.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*15|ti:/listview.js|anonymous|1|1<
-[44:18.68] Recv: >scripts*created*16|ti:/module.js|anonymous|1|1<
-[44:18.341] Recv: >scripts*created*17|app:///app.js|anonymous|1|1<
-[44:18.652] Recv: >scripts*created*18|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
-[44:18.920] Recv: >scripts*created*19|app:///ui/common/LogIn.js|anonymous|1|1<
-[44:27.602] Recv: >scripts*created*20|app:///ui/common/FriendList.js|anonymous|1|1<
-[44:27.820] Recv: >scripts*created*21|app:///ui/common/NavigationBar.js|anonymous|1|1<
-[44:28.598] Recv: >suspended*exception*app:///ui/common/NavigationBar.js*17<
-[44:28.598] Sent: >20*1386848656646*frames<
-[44:28.598] Recv: >1386848656646*0|NavigationBar||app:///ui/common/NavigationBar.js|17|false|322|22*1|||app:///ui/common/FriendList.js|14|false|247|23<
-[44:28.700] Sent: >32*1386848656647*variables*frame[0]<
-[44:34.314] Recv: >1386848656647*this|Object|o|[object Object]*rightBtnContainer|undefined|wl|undefined*addBtn|undefined|wl|undefined*menuBtn|undefined|wl|undefined*cur_win_id|undefined|wl|undefined*leftBtnContainer|undefined|wl|undefined*self|View|wol|[object View]*logoImg|undefined|wl|undefined*console|Object|wo|[object Object]*persistentObjects|Array|wo|[object Array]*gc|Function||[Function]<
-[44:37.838] Sent: >37*1386848656648*variables*frame[0].self<
-[44:37.840] Recv: >1386848656648*bubbleParent|Boolean|w|true*id|String|w|"navBar"*touchEnabled|undefined|w|undefined*layout|undefined|w|undefined*backgroundSelectedImage|undefined|w|undefined*accessibilityLabel|undefined|w|undefined*backgroundFocusedImage|undefined|w|undefined*enabled|undefined|w|undefined*zIndex|undefined|w|undefined*backgroundPadding|undefined|w|undefined*right|undefined|w|undefined*parent|null|w|null*backgroundSelectedColor|undefined|w|undefined*backgroundColor|String|w|"#0424240"*backgroundFocusedColor|undefined|w|undefined*accessibilityHidden|undefined|w|undefined*_properties|Object|wo|[object Object]*bottom|undefined|w|undefined*focusable|undefined|w|undefined*backgroundRepeat|Boolean|w|false*height|String|w|"10%"*left|undefined|w|undefined*softKeyboardOnFocus|undefined|w|undefined*borderWidth|undefined|w|undefined*backgroundGradient|undefined|w|undefined*top|undefined|w|undefined*opacity|undefined|w|undefined*_hasJavaListener|undefined|w|undefined*backgroundDisabledColor|undefined|w|undefined*accessibili...528<
-[44:42.496] Sent: >42*1386848656649*details*frame[0].self.parent<
-[44:42.497] Recv: >1386848656649*result*null<
-[44:45.978] Sent: >7**resume<
-[44:45.978] Recv: >resumed*resume<
-[45:12.55] Sent: >10**terminate<
-[45:12.56] Sent: >10**terminate<
+[20:45.795] Sent: >21*1386904845796*version<
+[20:45.798] Recv: >1386904845796*1*3.0.0.1367525200<
+[20:45.803] Sent: >36*1386904845797*option*monitorXHR*true<
+[20:45.803] Recv: >1386904845797*!unknown option <monitorXHR><
+[20:45.804] Sent: >45*1386904845798*option*suspendOnFirstLine*false<
+[20:45.804] Recv: >1386904845798<
+[20:45.804] Sent: >46*1386904845799*option*suspendOnExceptions*false<
+[20:45.854] Recv: >1386904845799<
+[20:45.854] Sent: >41*1386904845800*option*suspendOnErrors*true<
+[20:46.125] Recv: >1386904845800<
+[20:46.125] Sent: >43*1386904845801*option*suspendOnKeywords*true<
+[20:46.139] Recv: >1386904845801<
+[20:46.139] Sent: >45*1386904845802*option*bypassConstructors*false<
+[20:46.139] Recv: >1386904845802*!unknown option <bypassConstructors><
+[20:46.139] Sent: >44*1386904845803*option*stepFiltersEnabled*true<
+[20:46.140] Recv: >1386904845803*!unknown option <stepFiltersEnabled><
+[20:46.140] Sent: >30*1386904845804*detailFormatters<
+[20:46.140] Recv: >1386904845804<
+[20:46.140] Sent: >20*1386904845805*enable<
+[20:46.141] Recv: >resumed*start<
+[20:46.141] Recv: >1386904845805<
+[20:46.141] Recv: >scripts*created*1|ti:/webview.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*3|ti:/kroll.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*4|ti:/properties.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*5|ti:/events.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*6|ti:/ui.js|anonymous|1|1<
+[20:46.142] Recv: >scripts*created*7|ti:/titanium.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*9|ti:/console.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*10|ti:/path.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*11|ti:/invoker.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*12|ti:/tab.js|anonymous|1|1<
+[20:46.143] Recv: >scripts*created*13|ti:/url.js|anonymous|1|1<
+[20:46.144] Recv: >scripts*created*14|ti:/window.js|anonymous|1|1<
+[20:46.144] Recv: >scripts*created*15|ti:/listview.js|anonymous|1|1<
+[20:46.144] Recv: >scripts*created*16|ti:/module.js|anonymous|1|1<
+[20:46.278] Recv: >scripts*created*17|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
+[20:46.312] Recv: >scripts*created*18|app:///ui/common/LogIn.js|anonymous|1|1<
+[20:49.874] Recv: >scripts*created*19|app:///ui/common/FriendList.js|anonymous|1|1<
+[20:49.963] Recv: >scripts*created*20|app:///ui/common/NavigationBar.js|anonymous|1|1<
+[18:10.538] Sent: >21*1386904845806*disable<
+[18:10.571] Recv: >1386904845806<
+[18:10.571] Sent: >10**terminate<
 ----------End of file----------

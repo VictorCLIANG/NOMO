@@ -79,17 +79,18 @@ function LogIn() {
 
 		//	if(userNameText.value=="admin"&&passText.value=="sushmobile"){
 
-		var friendListWindow = Ti.UI.createWindow({
+		var AddFriendWindow = Ti.UI.createWindow({
 			id : 'friendListWin',
 			layout : 'vertical',
 			backgroundColor : '#f7f7f7',
 			navBarHidden : true,
 			modal : true,
 			url : 'FriendList.js',
+			//url : 'AddFriend.js',
 			userId : userId
 		});
 
-		friendListWindow.open();
+		AddFriendWindow.open();
 
 		//	}else{
 		//		alert("wrong input");
