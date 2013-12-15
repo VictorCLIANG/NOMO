@@ -11,7 +11,7 @@ if (userId == 333) {
 }
 
 var NavigationBar = require('ui/common/NavigationBar');
-var navBar = new NavigationBar();
+var navBar = new NavigationBar('addFriendWin');
 
 self.add(navBar);
 

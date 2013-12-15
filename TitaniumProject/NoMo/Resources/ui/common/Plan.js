@@ -8,7 +8,7 @@ var self = Ti.UI.currentWindow;
 var userId = self.userId;
 
 var NavigationBar = require('ui/common/NavigationBar');
-var navBar = new NavigationBar();
+var navBar = new NavigationBar('plansWin');
 
 self.add(navBar);
 

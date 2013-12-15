@@ -5,7 +5,7 @@ function LogIn() {
 	var self = Ti.UI.createView({
 		backgroundColor : '#424240'
 	});
-
+	
 	// Create Textview for username
 
 	var logoImg = Ti.UI.createImageView({
@@ -85,11 +85,13 @@ function LogIn() {
 			backgroundColor : '#f7f7f7',
 			navBarHidden : true,
 			modal : true,
-			url : 'FriendList.js',
-			//url : 'AddFriend.js',
+			//url : 'FriendList.js',
+			url : 'AddFriend.js',
 			userId : userId
 		});
-
+		
+		Ti.App.cur_userId = 1;
+		
 		AddFriendWindow.open();
 
 		//	}else{
