@@ -1,6 +1,12 @@
 Ti.UI.setBackgroundColor('#f7f7f7');
 
-var friendList = null;
+//var friendList = null;
+
+if(friendList){
+	
+}else{
+	var frindList = null;
+}
 
 var self = Titanium.UI.currentWindow;
 
@@ -11,38 +17,26 @@ if (userId == 333) {
 }
 
 var NavigationBar = require('ui/common/NavigationBar');
-var navBar = new NavigationBar('addFriendWin');
+if (friendList == null){
+	var navBar = new NavigationBar('addFriendWin_empty');
+}else {
+	var navBar = new NavigationBar('addFriendWin');
+}
+
 
 self.add(navBar);
 
 //commentted out for testing as mobileWeb
 
-var searchBarContainer = Ti.UI.createView({
-	id : 'searchBarContainer',
-	backgroundColor : '#424240',
-	layout : 'horizontal',
-	height : '10%'
-});
-
 var searchBar = Ti.UI.createSearchBar({
-	left : '3dp',
-	right : 0,
-	width : '85%',
+	width : '100%',
+	height:'10%',
 	backgroundColor : '#424240',
 	hintText : 'Find Friends',
-	showCancel : false
+	showCancel : true
 });
 
-var searchBarIcon = Ti.UI.createImageView({
-	left : '5dp',
-	image : '/images/Search_ic@2x.png',
-	height : '70%'
-});
-
-searchBarContainer.add(searchBarIcon);
-searchBarContainer.add(searchBar);
-
-self.add(searchBarContainer);
+self.add(searchBar);
 
 console.log("Friend LIst not empty");
 
@@ -82,6 +76,7 @@ for (var i = 0; i < data.length; i++) {
 			fontSize : '20dp'
 		},
 		color : 'black',
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		text : data[i].name
 	});
 
@@ -112,7 +107,7 @@ for (var i = 0; i < data.length; i++) {
 	friendListBtn.addEventListener('click', function(e) {
 		Ti.API.log(e.source.isSent);
 		if (e.source.isSent == false) {
-			alert("Friend Request has send to " + e.source.fname);
+			alert("A friend request has been send to " + e.source.fname);
 			e.source.isSent = true;
 			e.source.image = "/images/friends_icsent@2x.png";
 		}
@@ -147,8 +142,7 @@ self.addEventListener('open', function() {
 		var emptyFriendListBtn = Ti.UI.createImageView({
 			top : 5,
 			image : '/images/empty_listfriends@2x.png',
-			height : '150dp',
-			width : '150dp'
+			height : '150dp'
 		});
 
 		var skipMessage = Ti.UI.createLabel({
@@ -156,6 +150,7 @@ self.addEventListener('open', function() {
 			font : {
 				fontSize : '20dp'
 			},
+			color:'black',
 			text : 'Start by searching for your friends'
 		});
 
@@ -188,6 +183,7 @@ self.addEventListener('open', function() {
 
 			planWindow.open();
 			
+			self.close();
 		});
 
 	} else {

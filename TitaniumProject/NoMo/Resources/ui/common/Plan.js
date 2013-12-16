@@ -7,13 +7,28 @@ var self = Ti.UI.currentWindow;
 
 var userId = self.userId;
 
+//-----------Navigation Bar------------
 var NavigationBar = require('ui/common/NavigationBar');
 var navBar = new NavigationBar('plansWin');
 
 self.add(navBar);
+//---------------------------------------
 
-Ti.App.isEmptyPlan=true;
+var MainContentContainer = Ti.UI.createView({
+	horizontalWrap : false
+	//layout : 'horizontal'
+});
 
+//-----------Menu -----------------------
+var Menu = require('ui/common/Menu');
+var menu = new Menu();
+
+MainContentContainer.add(menu);
+self.add(MainContentContainer);
+//---------------------------------------
+
+//--------------------Main Content
+Ti.App.isEmptyPlan = true;
 
 self.addEventListener('focus', function() {
 	Ti.API.log("global is empty plan?:" + Ti.App.isEmptyPlan);
@@ -254,21 +269,26 @@ self.addEventListener('focus', function() {
 		}
 
 		var content = Titanium.UI.createTableView({
+			horizontalWrap : false,
 			data : rowData
 		});
+
 		Ti.API.log(self.emptyList);
-		
-		if (self.children[1]) {
-			Ti.API.log("Old Content about to be removed, on stack 2: childrenp[1]");
-			self.remove(self.children[1]);
-			
-		};		
-		self.add(content);
+
+		if (MainContentContainer.children[1]) {
+			Ti.API.log("Old Content about to be removed, on stack 2: children[1]");
+			MainContentContainer.remove(MainContentContainer.children[1]);
+
+		};
+		MainContentContainer.add(content);
 
 	} else {
 		console.log("empty plan list");
+
 		var emptyList = Ti.UI.createView({
-			id:'emptyPlanView',
+			horizontalWrap : false,
+			id : 'emptyPlanView',
+			horizontalWrap : false,
 			layout : 'vertical'
 		});
 
@@ -306,11 +326,23 @@ self.addEventListener('focus', function() {
 		emptyList.add(planMessage);
 		emptyList.add(emptyFriendListBtn);
 		emptyList.add(friendListMessage);
-		
-		self.add(emptyList);
+
+		MainContentContainer.add(emptyList);
 
 		emptyFriendListBtn.addEventListener('click', function(e) {
-			self.close();
+
+			var AddFriendWindow = Ti.UI.createWindow({
+				id : 'friendListWin',
+				layout : 'vertical',
+				backgroundColor : '#f7f7f7',
+				navBarHidden : true,
+				modal : true,
+				//url : 'FriendList.js',
+				url : 'AddFriend.js',
+				userId : userId
+			});
+
+			AddFriendWindow.open();
 		});
 
 		emptyPlanListBtn.addEventListener('click', function(e) {
@@ -323,6 +355,24 @@ self.addEventListener('focus', function() {
 		});
 
 	}
-	
+
+});
+
+MainContentContainer.addEventListener('swipe', function(e) {
+
+	if (e.direction == 'right') {
+		if (menu.toggle == false) {
+			menu.setLeft('0%');
+			menu.toggle = true;
+		};
+
+	}
+	if (e.direction == 'left') {
+		if (menu.toggle == true) {
+			menu.setLeft('-40%');
+			menu.toggle = false;
+		};
+		
+	}
 });
 

@@ -18,8 +18,9 @@ function AddPlan(UserId) {
 	var navigationBar = new navbar();
 
 	self.add(navigationBar);
+	
 	//-----------------------------------Main Content View
-	var mainView = Ti.UI.createScrollView({
+	var mainView = Ti.UI.createView({
 		id : 'AddPlanMainView',
 		height : '80%',
 		left : '5%',
@@ -228,13 +229,11 @@ function AddPlan(UserId) {
 	day.addEventListener("click", function() {
 		datePicker.show();
 		datePicker.height = '30%';
-		mainView.setScrollingEnabled(false);
 	});
 
 	day.addEventListener("blur", function() {
 		datePicker.hide();
 		datePicker.height = 0;
-		mainView.setScrollingEnabled(true);
 	});
 
 	datePicker.addEventListener("change", function() {

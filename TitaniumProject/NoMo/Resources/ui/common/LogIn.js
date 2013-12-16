@@ -28,7 +28,7 @@ function LogIn() {
 		top : '40%',
 		borderWidth : 1,
 		borderColor : "#a99",
-		hintText : 'Username',
+		hintText : 'Email',
 		backgroundColor : 'white',
 		borderRadius : tmp,
 		paddingLeft : 5,
@@ -54,7 +54,7 @@ function LogIn() {
 
 	// Create Login Button.
 	var loginButton = Ti.UI.createButton({
-		title : 'Sign In',
+		title : 'Sign in',
 		top : '64%',
 		backgroundColor : "#5dc2d6",
 		color : 'white',
@@ -80,13 +80,14 @@ function LogIn() {
 		//	if(userNameText.value=="admin"&&passText.value=="sushmobile"){
 
 		var AddFriendWindow = Ti.UI.createWindow({
-			id : 'friendListWin',
+			id : 'addFriendListWin',
 			layout : 'vertical',
 			backgroundColor : '#f7f7f7',
 			navBarHidden : true,
 			modal : true,
 			//url : 'FriendList.js',
 			url : 'AddFriend.js',
+			//fromList : false, // custom variable
 			userId : userId
 		});
 		

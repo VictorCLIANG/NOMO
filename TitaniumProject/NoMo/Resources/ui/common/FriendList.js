@@ -13,6 +13,29 @@ var navBar = new NavigationBar('FriendListWin');
 
 self.add(navBar);
 
+//---------------------------------------
+
+var MainContentContainer = Ti.UI.createView({
+	horizontalWrap : false
+	//layout : 'horizontal'
+});
+
+//-----------Menu -----------------------
+var Menu = require('ui/common/Menu');
+var menu = new Menu();
+
+MainContentContainer.add(menu);
+
+var tabContainer = Ti.UI.createView({
+	layout:'vertical',
+});
+
+MainContentContainer.add(tabContainer);
+
+self.add(MainContentContainer);
+//---------------------------------------
+
+//------------------------------main Content
 var tabView = Ti.UI.createView({
 	height : '10%',
 	layout : 'horizontal',
@@ -72,8 +95,8 @@ rightBtnContainer.addEventListener('click', function() {
 	LeftBtn.setColor('#5dc2d6');
 	//
 	
-	self.remove(flist);
-	self.add(Rlist);
+	tabContainer.remove(flist);
+	tabContainer.add(Rlist);
 
 });
 
@@ -89,8 +112,8 @@ LeftBtn.addEventListener('click', function() {
 	LeftBtn.setColor('white');
 	//
 	
-	self.remove(Rlist);
-	self.add(flist);
+	tabContainer.remove(Rlist);
+	tabContainer.add(flist);
 });
 
 rightBtnContainer.add(rightBtn);
@@ -99,7 +122,7 @@ rightBtnContainer.add(newNotificationLabel);
 tabView.add(LeftBtn);
 tabView.add(rightBtnContainer);
 
-self.add(tabView);
+tabContainer.add(tabView);
 
 //---------table View Contents---------------------------------
 var data = [{
@@ -126,6 +149,7 @@ for (var i = 0; i < data.length; i++) {
 			fontSize : '20dp'
 		},
 		color : 'black',
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		text : data[i].name
 	});
 
@@ -180,6 +204,7 @@ for (var i = 0; i < data.length; i++) {
 			fontSize : '20dp'
 		},
 		color : 'black',
+		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 		text : data[i].name
 	});
 
@@ -231,5 +256,5 @@ var Rlist = Ti.UI.createTableView({
 
 //---------------------------
 
-self.add(flist);
+tabContainer.add(flist);
 
