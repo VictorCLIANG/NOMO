@@ -1,48 +1,51 @@
-Logger started at: Friday, 13 December 2013 4:20:40 PM NZDT
+Logger started at: 2013年12月17日 星期二 上午02时17分46秒 NZDT
 Component: com.aptana.js.debug.core.v8
 Version: 3.0.0.1367525200
-[20:45.796] Recv: >1386904845796*version<
-[20:45.798] Sent: >32*1386904845796*1*3.0.0.1367525200<
-[20:45.803] Recv: >1386904845797*option*monitorXHR*true<
-[20:45.803] Sent: >42*1386904845797*!unknown option <monitorXHR><
-[20:45.804] Recv: >1386904845798*option*suspendOnFirstLine*false<
-[20:45.804] Sent: >13*1386904845798<
-[20:45.804] Recv: >1386904845799*option*suspendOnExceptions*false<
-[20:45.855] Sent: >13*1386904845799<
-[20:45.855] Recv: >1386904845800*option*suspendOnErrors*true<
-[20:46.125] Sent: >13*1386904845800<
-[20:46.138] Recv: >1386904845801*option*suspendOnKeywords*true<
-[20:46.138] Sent: >13*1386904845801<
-[20:46.139] Recv: >1386904845802*option*bypassConstructors*false<
-[20:46.139] Sent: >50*1386904845802*!unknown option <bypassConstructors><
-[20:46.139] Recv: >1386904845803*option*stepFiltersEnabled*true<
-[20:46.140] Sent: >50*1386904845803*!unknown option <stepFiltersEnabled><
-[20:46.140] Recv: >1386904845804*detailFormatters<
-[20:46.140] Sent: >13*1386904845804<
-[20:46.140] Recv: >1386904845805*enable<
-[20:46.141] Sent: >13*resumed*start<
-[20:46.141] Sent: >13*1386904845805<
-[20:46.141] Sent: >46*scripts*created*1|ti:/webview.js|anonymous|1|1<
-[20:46.142] Sent: >48*scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
-[20:46.142] Sent: >44*scripts*created*3|ti:/kroll.js|anonymous|1|1<
-[20:46.142] Sent: >49*scripts*created*4|ti:/properties.js|anonymous|1|1<
-[20:46.142] Sent: >45*scripts*created*5|ti:/events.js|anonymous|1|1<
-[20:46.142] Sent: >41*scripts*created*6|ti:/ui.js|anonymous|1|1<
-[20:46.142] Sent: >47*scripts*created*7|ti:/titanium.js|anonymous|1|1<
-[20:46.143] Sent: >47*scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
-[20:46.143] Sent: >46*scripts*created*9|ti:/console.js|anonymous|1|1<
-[20:46.143] Sent: >44*scripts*created*10|ti:/path.js|anonymous|1|1<
-[20:46.143] Sent: >47*scripts*created*11|ti:/invoker.js|anonymous|1|1<
-[20:46.143] Sent: >43*scripts*created*12|ti:/tab.js|anonymous|1|1<
-[20:46.143] Sent: >43*scripts*created*13|ti:/url.js|anonymous|1|1<
-[20:46.144] Sent: >46*scripts*created*14|ti:/window.js|anonymous|1|1<
-[20:46.144] Sent: >48*scripts*created*15|ti:/listview.js|anonymous|1|1<
-[20:46.144] Sent: >46*scripts*created*16|ti:/module.js|anonymous|1|1<
-[20:46.278] Sent: >80*scripts*created*17|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
-[20:46.312] Sent: >58*scripts*created*18|app:///ui/common/LogIn.js|anonymous|1|1<
-[20:49.874] Sent: >63*scripts*created*19|app:///ui/common/FriendList.js|anonymous|1|1<
-[20:49.963] Sent: >66*scripts*created*20|app:///ui/common/NavigationBar.js|anonymous|1|1<
-[18:10.570] Recv: >1386904845806*disable<
-[18:10.571] Sent: >13*1386904845806<
-[18:10.571] Recv: >*terminate<
+[18:0.793] Recv: >1387199880792*version<
+[18:0.806] Sent: >32*1387199880792*1*3.0.0.1367525200<
+[18:0.808] Recv: >1387199880793*option*monitorXHR*true<
+[18:0.808] Sent: >42*1387199880793*!unknown option <monitorXHR><
+[18:0.808] Recv: >1387199880794*option*stepFiltersEnabled*true<
+[18:0.809] Sent: >50*1387199880794*!unknown option <stepFiltersEnabled><
+[18:0.809] Recv: >1387199880795*option*suspendOnFirstLine*false<
+[18:0.809] Sent: >13*1387199880795<
+[18:0.809] Recv: >1387199880796*option*suspendOnExceptions*false<
+[18:1.190] Sent: >13*1387199880796<
+[18:1.191] Recv: >1387199880797*option*suspendOnErrors*true<
+[18:2.923] Sent: >13*1387199880797<
+[18:2.923] Recv: >1387199880798*option*suspendOnKeywords*true<
+[18:2.923] Sent: >13*1387199880798<
+[18:2.924] Recv: >1387199880799*option*bypassConstructors*false<
+[18:2.924] Sent: >50*1387199880799*!unknown option <bypassConstructors><
+[18:2.924] Recv: >1387199880800*option*stepFiltersEnabled*true<
+[18:2.924] Sent: >50*1387199880800*!unknown option <stepFiltersEnabled><
+[18:2.924] Recv: >1387199880801*detailFormatters<
+[18:2.924] Sent: >13*1387199880801<
+[18:2.925] Recv: >1387199880802*enable<
+[18:2.925] Sent: >13*resumed*start<
+[18:2.925] Sent: >46*scripts*created*1|ti:/webview.js|anonymous|1|1<
+[18:2.926] Sent: >48*scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
+[18:2.926] Sent: >44*scripts*created*3|ti:/kroll.js|anonymous|1|1<
+[18:2.926] Sent: >13*1387199880802<
+[18:2.926] Sent: >49*scripts*created*4|ti:/properties.js|anonymous|1|1<
+[18:2.926] Sent: >45*scripts*created*5|ti:/events.js|anonymous|1|1<
+[18:2.926] Sent: >41*scripts*created*6|ti:/ui.js|anonymous|1|1<
+[18:2.927] Sent: >47*scripts*created*7|ti:/titanium.js|anonymous|1|1<
+[18:2.927] Sent: >47*scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
+[18:2.927] Sent: >46*scripts*created*9|ti:/console.js|anonymous|1|1<
+[18:2.927] Sent: >44*scripts*created*10|ti:/path.js|anonymous|1|1<
+[18:2.927] Sent: >47*scripts*created*11|ti:/invoker.js|anonymous|1|1<
+[18:2.927] Sent: >43*scripts*created*12|ti:/tab.js|anonymous|1|1<
+[18:2.927] Sent: >43*scripts*created*13|ti:/url.js|anonymous|1|1<
+[18:2.927] Sent: >46*scripts*created*14|ti:/window.js|anonymous|1|1<
+[18:2.927] Sent: >48*scripts*created*15|ti:/listview.js|anonymous|1|1<
+[18:2.927] Sent: >46*scripts*created*16|ti:/module.js|anonymous|1|1<
+[18:3.422] Sent: >46*scripts*created*17|app:///app.js|anonymous|1|1<
+[18:3.807] Sent: >80*scripts*created*18|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
+[18:4.72] Sent: >58*scripts*created*19|app:///ui/common/LogIn.js|anonymous|1|1<
+[18:14.936] Sent: >62*scripts*created*20|app:///ui/common/AddFriend.js|anonymous|1|1<
+[18:15.290] Sent: >66*scripts*created*21|app:///ui/common/NavigationBar.js|anonymous|1|1<
+[18:18.913] Sent: >57*scripts*created*22|app:///ui/common/Plan.js|anonymous|1|1<
+[18:19.561] Sent: >57*scripts*created*23|app:///ui/common/Menu.js|anonymous|1|1<
+[18:23.909] Sent: >63*scripts*created*24|app:///ui/common/FriendList.js|anonymous|1|1<
 ----------End of file----------

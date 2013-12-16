@@ -27,7 +27,7 @@ var menu = new Menu();
 MainContentContainer.add(menu);
 
 var tabContainer = Ti.UI.createView({
-	layout:'vertical',
+	layout : 'vertical',
 });
 
 MainContentContainer.add(tabContainer);
@@ -94,7 +94,7 @@ rightBtnContainer.addEventListener('click', function() {
 	LeftBtn.setBackgroundColor('white');
 	LeftBtn.setColor('#5dc2d6');
 	//
-	
+
 	tabContainer.remove(flist);
 	tabContainer.add(Rlist);
 
@@ -111,7 +111,7 @@ LeftBtn.addEventListener('click', function() {
 	LeftBtn.setBackgroundColor('#5dc2d6');
 	LeftBtn.setColor('white');
 	//
-	
+
 	tabContainer.remove(Rlist);
 	tabContainer.add(flist);
 });
@@ -125,7 +125,7 @@ tabView.add(rightBtnContainer);
 tabContainer.add(tabView);
 
 //---------table View Contents---------------------------------
-var data = [{
+var f_data = [{
 	name : "Ella Jones-Everette"
 }, {
 	name : "Elisa Abraham"
@@ -139,9 +139,9 @@ var data = [{
 	name : "Neil Anderson"
 }];
 
-var rowData = [];
+var f_rowData = [];
 
-for (var i = 0; i < data.length; i++) {
+for (var i = 0; i < f_data.length; i++) {
 
 	var name = Ti.UI.createLabel({
 		left : 0,
@@ -150,7 +150,7 @@ for (var i = 0; i < data.length; i++) {
 		},
 		color : 'black',
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		text : data[i].name
+		text : f_data[i].name
 	});
 
 	var row = Ti.UI.createView({
@@ -169,18 +169,18 @@ for (var i = 0; i < data.length; i++) {
 
 	rowContainer.add(row);
 
-	rowData.push(rowContainer);
+	f_rowData.push(rowContainer);
 }
 
 var flist = Ti.UI.createTableView({
 	id : 'FriendListView',
-	data : rowData,
+	data : f_rowData,
 	layout : 'vertical'
 });
 
 //----------Request List --------------------
 
-var data = [{
+var r_data = [{
 	name : "Ella Jones-Everette"
 }, {
 	name : "Elisa Abraham"
@@ -194,9 +194,9 @@ var data = [{
 	name : "Neil Anderson"
 }];
 
-var rowData = [];
+var r_rowData = [];
 
-for (var i = 0; i < data.length; i++) {
+for (var i = 0; i < r_data.length; i++) {
 
 	var name = Ti.UI.createLabel({
 		left : 0,
@@ -205,7 +205,7 @@ for (var i = 0; i < data.length; i++) {
 		},
 		color : 'black',
 		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		text : data[i].name
+		text : r_data[i].name
 	});
 
 	var row = Ti.UI.createView({
@@ -224,20 +224,23 @@ for (var i = 0; i < data.length; i++) {
 	var acceptBtn = Ti.UI.createImageView({
 		left : 0,
 		image : '/images/request_accept@2x.png',
-		height : '30dp'
+		height : '30dp',
+		clickItem : 'accept'
 	});
 
 	var declineBtn = Ti.UI.createImageView({
 		right : 0,
 		image : '/images/request_decline@2x.png',
-		height : '30dp'
+		height : '30dp',
+		clickItem : 'decline'
 	});
 
 	buttonContainer.add(acceptBtn);
 	buttonContainer.add(declineBtn);
-	
+
 	row.add(name);
 	row.add(buttonContainer);
+	//-------------------------------------
 
 	var rowContainer = Ti.UI.createTableViewRow({
 		layout : 'horizontal'
@@ -245,13 +248,68 @@ for (var i = 0; i < data.length; i++) {
 
 	rowContainer.add(row);
 
-	rowData.push(rowContainer);
+	r_rowData.push(rowContainer);
 }
 
 var Rlist = Ti.UI.createTableView({
 	id : 'RequestListView',
-	data : rowData,
+	data : r_rowData,
 	layout : 'vertical'
+});
+
+//------EVENT LISTENERs----------------
+Rlist.addEventListener('click', function(e) {
+	Ti.API.log("Row Number:" + e.index);
+	var rowIndex = e.index;
+	var clickedItem = e.source.clickItem;
+	Ti.API.log("Clicked On:" + clickedItem);
+
+	if (clickedItem == 'accept') {
+		r_data.splice(rowIndex, 1);
+		Rlist.deleteRow(rowIndex);
+	} else if (clickedItem == 'decline') {
+
+		var confirm = Titanium.UI.createAlertDialog({
+			title : 'Decline',
+			message : 'Are you sure you want to ignore this request?',
+			buttonNames : ['Yes', 'No'],
+			cancel : 1
+		});
+
+		confirm.addEventListener('click', function(e1) {
+			if (e1.cancel === e1.index || e1.cancel === true) {
+				return false;
+			}
+			if (e1.index === 0) {
+				r_data.splice(rowIndex, 1);
+				Rlist.deleteRow(rowIndex);
+			}
+		});
+
+		confirm.show();
+	}
+
+});
+
+declineBtn.addEventListener('click', function() {
+
+	var confirm = Titanium.UI.createAlertDialog({
+		title : 'Decline',
+		message : 'Are you sure you want to ignore this request?',
+		buttonNames : ['Yes', 'No'],
+		cancel : 1
+	});
+
+	confirm.addEventListener('click', function(e) {
+		if (e.cancel === e.index || e.cancel === true) {
+			return false;
+		}
+		if (e.index === 0) {
+			r_data.splice(i, 1);
+		}
+	});
+
+	confirm.show();
 });
 
 //---------------------------

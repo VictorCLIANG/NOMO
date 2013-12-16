@@ -273,7 +273,6 @@ self.addEventListener('focus', function() {
 			data : rowData
 		});
 
-		Ti.API.log(self.emptyList);
 
 		if (MainContentContainer.children[1]) {
 			Ti.API.log("Old Content about to be removed, on stack 2: children[1]");
@@ -347,11 +346,17 @@ self.addEventListener('focus', function() {
 
 		emptyPlanListBtn.addEventListener('click', function(e) {
 
-			var AddPlan = require('ui/common/AddPlan');
-			var newPlan = new AddPlan(userId);
-
-			newPlan.open();
-
+			var AddPlanWindow = Ti.UI.createWindow({
+				id : 'AddPlanWin',
+				modal : true,
+				navBarHidden : true,
+				backgroundColor : '#f7f7f7',
+				url : 'AddPlan.js',
+				layout : 'vertical'
+			});
+			
+			AddPlanWindow.open();
+			
 		});
 
 	}
@@ -372,7 +377,7 @@ MainContentContainer.addEventListener('swipe', function(e) {
 			menu.setLeft('-40%');
 			menu.toggle = false;
 		};
-		
+
 	}
 });
 

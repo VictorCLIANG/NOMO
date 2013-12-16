@@ -66,7 +66,7 @@ function NavigationBar(win_id) {
 	//backBtnContainer.add(backBtnLabel);
 
 	if (win_id == 'plansWin') {//---------------------Navigation Setup for Plans Window-----------------------------
-		var cur_win = self.parent;
+		//var cur_win = self.parent;
 		
 		var menuBtn = Ti.UI.createImageView({
 			left : 0,
@@ -79,7 +79,7 @@ function NavigationBar(win_id) {
 		});
 
 		menuBtn.addEventListener('click', function() {
-			var menuObj = cur_win.children[1].children[0];
+			var menuObj = self.parent.children[1].children[0];
 			if (menuObj.toggle == false) {
 				menuObj.setLeft('0%');
 				menuObj.toggle = true;
@@ -94,10 +94,16 @@ function NavigationBar(win_id) {
 			//Ti.API.log("CurrentWindow : " + cur_win_id);
 			//console.log(mainView[0]);
 
-			var AddPlan = require('ui/common/AddPlan');
-			var newPlan = new AddPlan(userId);
-
-			newPlan.open();
+			var AddPlanWindow = Ti.UI.createWindow({
+				id : 'AddPlanWin',
+				modal : true,
+				navBarHidden : true,
+				backgroundColor : '#f7f7f7',
+				url : 'AddPlan.js',
+				layout : 'vertical'
+			});
+			
+			AddPlanWindow.open();
 
 		});
 
@@ -146,7 +152,7 @@ function NavigationBar(win_id) {
 		});
 
 		menuBtn.addEventListener('click', function() {
-			var menuObj = cur_win.children[1].children[0];
+			var menuObj = self.parent.children[1].children[0];
 			if (menuObj.toggle == false) {
 				menuObj.setLeft('0%');
 				menuObj.toggle = true;
@@ -186,12 +192,14 @@ function NavigationBar(win_id) {
 	}
 
 	backBtnContainer.addEventListener('click', function() {
-		cur_win.close();
+		self.parent.close();
 	});
 
 	self.add(leftBtnContainer);
 	self.add(logoImg);
 	self.add(rightBtnContainer);
+	
+	Ti.API.log(win_id);
 
 	return self;
 }

@@ -5,7 +5,7 @@
 
 function Menu() {
 
-	var cur_win = Ti.UI.getCurrentWindow;
+	var cur_win = Ti.UI.currentWindow;
 
 	var self = Ti.UI.createView({
 		id : 'menu',
@@ -25,6 +25,9 @@ function Menu() {
 	var planLabel=Ti.UI.createLabel({
 		left:'10dp',
 		text:'Plan',
+		font : {
+			fontSize : '20dp'
+		},
 		color:'white'
 	});
 	
@@ -38,6 +41,9 @@ function Menu() {
 	var friendLabel=Ti.UI.createLabel({
 		left:'10dp',
 		text:'My Friends',
+		font : {
+			fontSize : '20dp'
+		},
 		color:'white'
 	});
 	
@@ -50,6 +56,9 @@ function Menu() {
 	var myPlanLabel=Ti.UI.createLabel({
 		left:'10dp',
 		text:'My Plans',
+		font : {
+			fontSize : '20dp'
+		},
 		color:'white'
 	});
 	
@@ -63,6 +72,9 @@ function Menu() {
 	var logOutLabel=Ti.UI.createLabel({
 		left:'10dp',
 		text:'Log Out',
+		font : {
+			fontSize : '20dp'
+		},
 		color:'white'
 	});
 	
@@ -85,7 +97,12 @@ function Menu() {
 			userId : Ti.App.cur_userId
 		});
 		
+		friendBtn.setBackgroundColor('#5dc2d6');
+		
+		
 		FriendWindow.open();
+		friendBtn.setBackgroundColor('#424240');
+		self.setLeft('-40%');
 	});
 	
 	

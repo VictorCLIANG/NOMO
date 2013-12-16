@@ -2,7 +2,9 @@ Ti.UI.setBackgroundColor('#f7f7f7');
 
 //var friendList = null;
 
-if(friendList){
+var friendList;
+
+if(friendList !=null){
 	
 }else{
 	var frindList = null;

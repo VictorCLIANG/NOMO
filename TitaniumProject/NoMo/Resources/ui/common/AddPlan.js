@@ -2,20 +2,11 @@
  *
  *
  */
-
-function AddPlan(UserId) {
-
-	var self = Ti.UI.createWindow({
-		id : 'AddPlanWin',
-		modal : true,
-		navBarHidden : true,
-		backgroundColor : '#f7f7f7',
-		layout : 'vertical'
-	});
+	var self = Ti.UI.currentWindow;
 
 	//----------------------------------Navigation
 	var navbar = require('ui/common/NavigationBar');
-	var navigationBar = new navbar();
+	var navigationBar = new navbar('addPlanWin');
 
 	self.add(navigationBar);
 	
@@ -253,8 +244,3 @@ function AddPlan(UserId) {
 		//parentView.open();
 		//parentView.add(plan);
 	});
-
-	return self;
-}
-
-module.exports = AddPlan;

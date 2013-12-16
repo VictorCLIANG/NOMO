@@ -1987,3 +1987,1143 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+!SESSION 2013-12-16 23:49:01.897 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-12-16 23:50:25.593
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1
+!SESSION 2013-12-16 23:50:26.214 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\workspace\NoMo\TitaniumProject
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-16 23:53:48.698
+!MESSAGE NLS missing message: HttpServerSettingsTab_Title in: com.aptana.js.debug.ui.internal.launchConfigurations.messages
+
+!ENTRY com.aptana.js.debug.core.v8 4 0 2013-12-16 23:59:09.948
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  connect timed out
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-16 23:59:09.969
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error initiating the debugger connection
+!STACK 1
+org.eclipse.core.runtime.CoreException: Session initialization failed
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1313)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	... 6 more
+!SUBENTRY 1 com.aptana.js.debug.core.v8 4 0 2013-12-16 23:59:09.970
+!MESSAGE Session initialization failed
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:01.115
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:01.638
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:02.145
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:02.654
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:03.171
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:03.684
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:05.874
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core.v8 4 0 2013-12-17 00:06:05.874
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  java.lang.Exception: Failure: Connection closed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 00:06:05.880
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error initiating the debugger connection
+!STACK 1
+org.eclipse.core.runtime.CoreException: Session initialization failed
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1313)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	... 6 more
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+!SUBENTRY 1 com.aptana.js.debug.core.v8 4 0 2013-12-17 00:06:05.881
+!MESSAGE Session initialization failed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:57.630
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:58.138
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:58.709
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:59.219
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:06:59.726
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:07:00.234
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:07:01.494
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:01.444
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:14.593
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:15.105
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:15.677
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:16.211
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:12:16.718
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:12:17.591
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:15:40.598
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:15:53.702
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:15:54.209
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:15:54.715
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:15:55.223
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:15:56.085
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:38.946
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:53.755
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:54.263
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:54.775
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:55.280
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:55.785
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:19:56.293
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:19:57.297
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:37.853
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:54.665
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:55.172
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:55.738
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:56.251
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:56.758
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:22:57.264
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:22:57.998
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:29.197
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:41.148
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:41.655
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:42.162
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:42.671
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:43.178
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:29:43.688
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:29:44.460
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:39:57.575
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:40:11.107
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:42:11.766
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 4 0 2013-12-17 00:42:11.766
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException
+	at org.chromium.sdk.internal.v8native.ContextBuilder.buildSequenceFailure(ContextBuilder.java:136)
+	at org.chromium.sdk.internal.v8native.processor.BacktraceProcessor.handleWrongStacktrace(BacktraceProcessor.java:91)
+	at org.chromium.sdk.internal.v8native.processor.BacktraceProcessor.failure(BacktraceProcessor.java:87)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:42:24.710
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:42:25.217
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:42:25.725
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:42:26.231
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:42:27.065
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:41.824
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:55.312
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:55.826
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:56.395
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:56.901
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:52:57.409
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:52:58.295
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:53:52.609
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:04.265
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:04.778
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:05.287
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:05.795
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:06.304
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 00:54:06.813
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 00:54:07.537
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:17.720
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:21.764
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:22.274
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:22.785
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:23.296
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:23.804
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:00:25.711
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core.v8 4 0 2013-12-17 01:00:25.711
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  java.lang.Exception: Failure: Connection closed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 01:00:25.715
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error initiating the debugger connection
+!STACK 1
+org.eclipse.core.runtime.CoreException: Session initialization failed
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1313)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	... 6 more
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+!SUBENTRY 1 com.aptana.js.debug.core.v8 4 0 2013-12-17 01:00:25.715
+!MESSAGE Session initialization failed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:01:04.816
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:01:05.322
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:01:05.846
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:01:06.388
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:01:06.894
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:01:07.797
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:10:15.076
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:26.529
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:27.038
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:27.547
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:28.109
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:28.623
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:32:29.131
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:32:29.883
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:36:46.232
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:00.129
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:00.641
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:01.145
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:01.692
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:02.203
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:37:02.712
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:37:03.674
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:38:32.870
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:39:47.196
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:39:47.753
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:39:48.265
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:39:48.773
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:39:49.281
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:39:50.097
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:41:51.416
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:42:04.587
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:42:05.095
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:42:05.605
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:42:06.110
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:42:06.616
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:42:07.602
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:21.255
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:34.638
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:35.149
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:35.661
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:36.170
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:36.675
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:45:37.186
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:45:37.902
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:46:50.189
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:04.846
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:05.359
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:05.868
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:06.449
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:06.961
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:47:07.469
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:47:08.261
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:38.300
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:51.955
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:52.471
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:52.983
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:53.492
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:53.998
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 01:56:54.506
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 01:56:55.196
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:33.465
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:48.918
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:49.425
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:49.934
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:50.451
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:50.957
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:12:51.465
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 02:12:52.300
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:27.225
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:39.914
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:40.421
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:40.929
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:41.434
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:15:41.944
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 02:15:42.663
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:44.642
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:57.305
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:57.812
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:58.375
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:58.881
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 02:17:59.389
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 02:18:00.807
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
