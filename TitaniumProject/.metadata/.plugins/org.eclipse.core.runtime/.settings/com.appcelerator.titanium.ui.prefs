@@ -1,9 +1,8 @@
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
 FastDev\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1387248010608
+LAST_LAUNCH_TIMESTAMP=1387280801899
 NoMo\:ConsoleLogLevel=Info
 eclipse.preferences.version=1
-preference.default.toolbar.visible_org.eclipse.debug.ui.DebugPerspective=true
 preference.show.console.onError=true
 preference.studio.perspective.toolbar.visible=true
 preference.studio.perspective.version=102

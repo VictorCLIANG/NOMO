@@ -134,29 +134,30 @@ searchFriendReq.onload = function() {
 
 			rowData.push(rowContainer);
 		}
-
-		friendListBtn.addEventListener('click', function(e) {
-
-			if (e.source.clickedItem == 'btn') {
-				Ti.API.log(e.source.isSent);
-				if (e.source.isSent == false) {
-					//alert("A friend request has been sent to " + e.source.fname);
-					e.source.isSent = true;
-					e.source.image = "/images/friends_icsent@2x.png";
-					
-					sendFriendReq.open("GET",Ti.App.baseUrl + 'CreateFriendRequest');
-					var sendFriendReqPara = {
-						userId: Ti.App.cur_userId,
-						friendId: e.source.fid
-					};
-					sendFriendReq.send(sendFriendReqPara);
-					
-				}
-			}
-		});
-
 	}
 	content.setData(rowData);
+	//self.remove(self.children[2]);
+	self.add(content);
+	
+	content.addEventListener('click', function(e) {
+
+		if (e.source.clickedItem == 'btn') {
+			Ti.API.log(e.source.isSent);
+			if (e.source.isSent == false) {
+				//alert("A friend request has been sent to " + e.source.fname);
+				e.source.isSent = true;
+				e.source.image = "/images/friends_icsent@2x.png";
+
+				sendFriendReq.open("GET", Ti.App.baseUrl + 'CreateFriendRequest');
+				var sendFriendReqPara = {
+					userId : Ti.App.cur_userId,
+					friendId : e.source.fid
+				};
+				sendFriendReq.send(sendFriendReqPara);
+
+			}
+		}
+	});
 };
 
 searchFriendReq.onerror = function() {

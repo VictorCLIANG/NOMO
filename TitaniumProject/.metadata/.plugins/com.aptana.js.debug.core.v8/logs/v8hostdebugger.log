@@ -1,4 +1,53 @@
-Logger started at: Tuesday, 17 December 2013 6:36:14 PM NZDT
+Logger started at: 2013年12月18日 星期三 上午01时50分49秒 NZDT
 Component: com.aptana.js.debug.core.v8
 Version: 3.0.0.1367525200
+[51:1.191] Recv: >1387284661191*version<
+[51:1.191] Sent: >32*1387284661191*1*3.0.0.1367525200<
+[51:1.193] Recv: >1387284661192*option*monitorXHR*true<
+[51:1.193] Sent: >42*1387284661192*!unknown option <monitorXHR><
+[51:1.195] Recv: >1387284661193*option*suspendOnFirstLine*false<
+[51:1.195] Sent: >13*1387284661193<
+[51:1.195] Recv: >1387284661194*option*suspendOnExceptions*false<
+[51:1.308] Sent: >13*1387284661194<
+[51:1.309] Recv: >1387284661195*option*stepFiltersEnabled*false<
+[51:1.309] Sent: >50*1387284661195*!unknown option <stepFiltersEnabled><
+[51:1.309] Recv: >1387284661196*option*suspendOnErrors*true<
+[51:1.435] Sent: >13*1387284661196<
+[51:1.435] Recv: >1387284661197*option*suspendOnKeywords*true<
+[51:1.435] Sent: >13*1387284661197<
+[51:1.435] Recv: >1387284661198*option*bypassConstructors*false<
+[51:1.435] Sent: >50*1387284661198*!unknown option <bypassConstructors><
+[51:1.436] Recv: >1387284661199*option*stepFiltersEnabled*false<
+[51:1.436] Sent: >50*1387284661199*!unknown option <stepFiltersEnabled><
+[51:1.436] Recv: >1387284661200*detailFormatters<
+[51:1.436] Sent: >13*1387284661200<
+[51:1.436] Recv: >1387284661201*enable<
+[51:1.436] Sent: >13*resumed*start<
+[51:1.437] Sent: >13*1387284661201<
+[51:4.404] Sent: >46*scripts*created*1|ti:/webview.js|anonymous|1|1<
+[51:4.405] Sent: >48*scripts*created*2|ti:/bootstrap.js|anonymous|1|1<
+[51:4.405] Sent: >44*scripts*created*3|ti:/kroll.js|anonymous|1|1<
+[51:4.405] Sent: >49*scripts*created*4|ti:/properties.js|anonymous|1|1<
+[51:4.405] Sent: >45*scripts*created*5|ti:/events.js|anonymous|1|1<
+[51:4.405] Sent: >41*scripts*created*6|ti:/ui.js|anonymous|1|1<
+[51:4.405] Sent: >47*scripts*created*7|ti:/titanium.js|anonymous|1|1<
+[51:4.405] Sent: >47*scripts*created*8|ti:/tabgroup.js|anonymous|1|1<
+[51:4.405] Sent: >46*scripts*created*9|ti:/console.js|anonymous|1|1<
+[51:4.406] Sent: >44*scripts*created*10|ti:/path.js|anonymous|1|1<
+[51:4.406] Sent: >47*scripts*created*11|ti:/invoker.js|anonymous|1|1<
+[51:4.406] Sent: >43*scripts*created*12|ti:/tab.js|anonymous|1|1<
+[51:4.406] Sent: >43*scripts*created*13|ti:/url.js|anonymous|1|1<
+[51:4.406] Sent: >46*scripts*created*14|ti:/window.js|anonymous|1|1<
+[51:4.406] Sent: >48*scripts*created*15|ti:/listview.js|anonymous|1|1<
+[51:4.406] Sent: >46*scripts*created*16|ti:/module.js|anonymous|1|1<
+[51:4.789] Sent: >46*scripts*created*17|app:///app.js|anonymous|1|1<
+[51:5.140] Sent: >80*scripts*created*18|app:///ui/handheld/android/ApplicationWindow.js|anonymous|1|1<
+[51:5.502] Sent: >58*scripts*created*19|app:///ui/common/LogIn.js|anonymous|1|1<
+[51:11.619] Sent: >57*scripts*created*20|app:///ui/common/Plan.js|anonymous|1|1<
+[51:11.865] Sent: >66*scripts*created*21|app:///ui/common/NavigationBar.js|anonymous|1|1<
+[51:12.512] Sent: >57*scripts*created*22|app:///ui/common/Menu.js|anonymous|1|1<
+[51:15.638] Sent: >62*scripts*created*23|app:///ui/common/AddFriend.js|anonymous|1|1<
+[51:48.197] Sent: >57*scripts*created*24|app:///ui/common/Plan.js|anonymous|1|1<
+[51:55.892] Sent: >63*scripts*created*25|app:///ui/common/FriendList.js|anonymous|1|1<
+[52:13.981] Recv: >*terminate<
 ----------End of file----------
