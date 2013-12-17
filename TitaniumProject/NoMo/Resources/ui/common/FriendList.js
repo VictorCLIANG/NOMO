@@ -34,6 +34,14 @@ MainContentContainer.add(tabContainer);
 
 self.add(MainContentContainer);
 //---------------------------------------
+//------------define APi--------------------
+//------get friend list Req ---------------
+var getFriendListReq = Titanium.Network.createHTTPClient();
+
+
+
+
+
 
 //------------------------------main Content
 var tabView = Ti.UI.createView({
@@ -68,7 +76,7 @@ var rightBtn = Ti.UI.createLabel({
 	},
 	textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
 	backgroundColor : 'white',
-	text : 'My Friend List',
+	text : 'Friend requests',
 	color : '#5dc2d6'
 });
 

@@ -3127,3 +3127,2268 @@ Caused by: java.io.IOException: End of stream
 
 !ENTRY com.aptana.js.debug.core 1 0 2013-12-17 02:18:00.807
 !MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+!SESSION 2013-12-17 10:33:37.902 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-12-17 10:33:47.777
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.git.core 4 0 2013-12-17 10:33:51.829
+!MESSAGE (Build 3.1.3.1377024923) [ERROR] com.aptana.git.core/debug You entered a custom git path in the Preferences pane, but this path is not a valid git v1.6.0 or higher binary. Were going to use the default search paths instead
+
+!ENTRY org.eclipse.ui 4 4 2013-12-17 10:34:41.295
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY com.aptana.js.debug.core.v8 4 0 2013-12-17 10:40:52.275
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  connect timed out
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 10:40:52.315
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error initiating the debugger connection
+!STACK 1
+org.eclipse.core.runtime.CoreException: Session initialization failed
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1313)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	... 6 more
+!SUBENTRY 1 com.aptana.js.debug.core.v8 4 0 2013-12-17 10:40:52.316
+!MESSAGE Session initialization failed
+!STACK 0
+java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-17 10:42:11.382
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-12-17 10:42:11.387
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+!SESSION 2013-12-17 10:44:18.716 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:16.459
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:16.997
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:17.511
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:18.032
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:18.544
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:19.055
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:19.659
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:20.171
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:20.680
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 10:51:21.501
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 10:51:47.438
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 10:51:47.439
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 10:51:50.335
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 4 0 2013-12-17 10:51:50.338
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException
+	at org.chromium.sdk.internal.v8native.ContextBuilder.buildSequenceFailure(ContextBuilder.java:136)
+	at org.chromium.sdk.internal.v8native.processor.BacktraceProcessor.handleWrongStacktrace(BacktraceProcessor.java:91)
+	at org.chromium.sdk.internal.v8native.processor.BacktraceProcessor.failure(BacktraceProcessor.java:87)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY org.eclipse.ui 4 0 2013-12-17 12:16:39.279
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.jruby.exceptions.RaiseException: (Errno::EINVAL) =::
+	at org.jruby.RubyHash.replace(org/jruby/RubyHash.java:1623)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:29:13.205
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:29:13.718
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:29:14.231
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 12:29:15.015
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:14.677
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:29.411
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:29.944
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:30.452
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:30.961
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:31.472
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:31:31.982
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 12:31:32.743
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:36:20.437
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:10.009
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:10.524
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:11.033
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:11.543
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:12.055
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:37:12.569
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 12:37:13.470
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:07.065
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:18.448
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:18.964
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:19.489
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:20.000
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:39:20.508
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 12:39:21.339
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:25.517
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:36.086
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:36.595
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:37.106
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:37.616
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:38.125
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:49:38.636
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 12:49:39.599
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 12:50:48.029
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:28:58.839
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:28:59.343
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:28:59.855
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:29:00.364
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:29:00.873
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:29:01.382
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:29:01.891
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 13:29:02.758
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 13:30:52.215
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 13:30:52.216
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:30:52.644
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:31:04.164
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:31:04.675
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:31:05.185
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:31:05.694
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:31:06.204
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 13:31:07.025
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 13:38:35.779
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 13:38:35.780
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:38:36.226
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:28.042
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:28.558
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:29.065
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:29.597
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:30.108
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:30.622
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:52:31.138
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 13:52:31.834
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 13:54:09.579
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 13:54:09.580
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:54:09.992
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:55:58.690
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:55:59.205
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:55:59.782
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:56:00.299
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:56:00.807
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 13:56:01.521
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 13:59:31.767
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 13:59:31.767
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:32.270
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:43.265
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:43.781
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:44.291
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:44.852
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:45.360
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 13:59:45.867
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 13:59:46.705
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:03:37.950
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:42.812
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:43.322
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:43.843
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:44.352
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:44.863
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:13:45.373
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:13:46.594
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:15:49.698
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.eclipse.debug.ui 4 120 2013-12-17 14:16:01.649
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.io.IOException
+	at org.eclipse.debug.internal.core.StreamsProxy.write(StreamsProxy.java:129)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:681)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:12.462
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:12.980
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:13.534
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:14.055
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:14.584
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:16:15.586
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 14:16:55.455
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 14:16:55.455
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:16:55.601
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:05.849
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:06.361
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:06.873
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:07.384
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:07.890
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:17:08.403
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:17:09.317
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:19:57.948
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:09.286
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:09.825
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:10.333
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:10.852
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:11.365
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:20:11.927
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:20:13.018
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.core 4 0 2013-12-17 14:32:39.390
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.core.launching.TitaniumLaunchConfigurationUtil.terminateLaunches(TitaniumLaunchConfigurationUtil.java:260)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidSimulatorLaunchConfigurationDelegate.launch(AndroidSimulatorLaunchConfigurationDelegate.java:99)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 7 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 14:32:39.391
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.core.launching.TitaniumLaunchConfigurationUtil.terminateLaunches(TitaniumLaunchConfigurationUtil.java:260)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidSimulatorLaunchConfigurationDelegate.launch(AndroidSimulatorLaunchConfigurationDelegate.java:99)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 14:32:39.398
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 14:32:39.398
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:39.826
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:51.865
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:52.375
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:52.887
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:53.396
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:53.926
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:32:54.448
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:32:55.277
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:39:11.377
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:36.489
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:36.999
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:37.505
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:38.018
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:38.528
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:39.039
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:42:39.548
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:42:40.254
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:44:41.958
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:35.635
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:36.140
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:36.649
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:37.159
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:37.684
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:38.200
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:46:38.710
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:46:39.423
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.eclipse.core.jobs 4 2 2013-12-17 14:48:32.639
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:300)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at com.aptana.js.debug.core.internal.model.JSDebugProcess.terminate(JSDebugProcess.java:236)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:252)
+	at org.eclipse.debug.internal.core.commands.TerminateCommand.execute(TerminateCommand.java:30)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:31)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:213)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:48:32.696
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:52.955
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:53.480
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:53.990
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:54.554
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:55.079
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:55.589
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 14:49:56.099
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 14:49:56.924
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 15:06:19.824
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.formatter.epl 4 0 2013-12-17 15:36:55.164
+!MESSAGE (Build 3.1.3.201309132423) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.formatter.epl 4 0 2013-12-17 15:37:03.019
+!MESSAGE (Build 3.1.3.201309132423) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.formatter.epl 4 0 2013-12-17 15:37:19.620
+!MESSAGE (Build 3.1.3.201309132423) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.formatter.epl 4 0 2013-12-17 15:37:30.292
+!MESSAGE (Build 3.1.3.201309132423) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+
+!ENTRY com.aptana.formatter.epl 4 0 2013-12-17 15:38:06.349
+!MESSAGE (Build 3.1.3.201309132423) [ERROR] com.aptana.formatter.epl/debug Error while formatting the code in your editor.
+ Please submit a bug report through Studio's support and include the relevant code which triggered this error.
+ You may also turn on the com.aptana.formatter.epl/debug at the Studio's Troubleshooting preference page to log more details about this error.
+!SESSION 2013-12-17 15:39:18.385 -----------------------------------------------
+eclipse.buildId=3.1.3.201309132423
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_NZ
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 0 2013-12-17 15:40:57.723
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.jruby.exceptions.RaiseException: (Errno::EINVAL) =::
+	at org.jruby.RubyHash.replace(org/jruby/RubyHash.java:1623)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:39.238
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:39.789
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:40.330
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:40.852
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:41.361
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:41.871
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:42.381
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:42.891
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:43.401
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:43.939
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:44.455
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:44.970
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:45.481
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:45.991
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:46.501
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:47.010
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:47.519
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:48.030
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:48.540
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:49.050
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:49.560
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:50.069
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:50.579
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:51.089
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:51.599
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:52.109
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:41:52.630
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:41:53.650
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:23.296
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:32.262
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:32.770
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:33.281
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:33.789
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:34.298
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:34.810
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:35.322
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:35.830
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:36.388
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:36.900
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:37.412
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:37.921
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:38.431
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:38.942
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:39.452
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:39.971
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:40.481
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:40.990
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:41.501
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:42.011
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:42.521
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:43:43.030
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:43:43.792
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 16:47:37.393
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 16:47:37.394
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:37.477
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:47.652
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:48.161
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:48.671
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:49.182
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:47:49.692
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:47:50.550
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:50:51.735
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:51:00.778
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:51:01.322
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:51:01.833
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:51:02.341
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:51:02.894
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:51:03.753
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 16:53:41.502
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 16:53:41.502
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:53:41.598
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:53:51.314
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:53:51.877
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:53:52.406
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:53:52.921
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:53:53.865
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:02.714
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:12.505
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:13.013
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:13.524
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:14.033
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 16:56:14.544
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 16:56:15.330
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:00:15.986
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:11:58.403
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:11:58.940
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:11:59.455
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:11:59.966
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:12:01.109
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:13:59.466
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:11.338
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:11.862
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:12.397
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:12.906
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:13.447
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:13.957
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:16:14.466
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:16:15.258
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 17:18:27.959
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 17:18:27.959
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:28.013
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:37.281
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:37.789
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:38.298
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:38.818
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:39.336
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:18:39.848
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:18:40.711
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 17:21:47.405
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 17:21:47.406
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:21:47.485
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:21:57.819
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:21:58.328
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:21:59.058
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:26:11.975
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:26:22.196
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:26:23.010
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.core 4 0 2013-12-17 17:27:32.038
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.core.launching.TitaniumLaunchConfigurationUtil.terminateLaunches(TitaniumLaunchConfigurationUtil.java:260)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidSimulatorLaunchConfigurationDelegate.launch(AndroidSimulatorLaunchConfigurationDelegate.java:99)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 7 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 17:27:32.039
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.core.launching.TitaniumLaunchConfigurationUtil.terminateLaunches(TitaniumLaunchConfigurationUtil.java:260)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidSimulatorLaunchConfigurationDelegate.launch(AndroidSimulatorLaunchConfigurationDelegate.java:99)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:32.104
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:41.772
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:42.278
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:42.783
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:43.299
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:43.810
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:27:44.317
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:27:45.090
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:29:38.379
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:15.569
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:16.080
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:16.590
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:17.146
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:17.650
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:30:18.159
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:30:19.146
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:36:40.692
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:49.733
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:50.245
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:50.837
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:51.372
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:51.971
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:52.527
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:53.112
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:53.647
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:54.183
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:54.706
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:55.250
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:55.755
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:56:56.264
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:56:57.065
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 17:58:46.968
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error while terminating the launch after an unsuccessful application installation
+!STACK 1
+org.eclipse.debug.core.DebugException: 
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:263)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	... 9 more
+!SUBENTRY 1 com.aptana.js.debug.core 4 5010 2013-12-17 17:58:46.968
+!MESSAGE 
+!STACK 0
+java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at sun.nio.cs.StreamEncoder.writeBytes(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(Unknown Source)
+	at sun.nio.cs.StreamEncoder.implFlush(Unknown Source)
+	at sun.nio.cs.StreamEncoder.flush(Unknown Source)
+	at java.io.OutputStreamWriter.flush(Unknown Source)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:301)
+	at com.aptana.js.debug.core.internal.model.DebugConnection.sendCommand(DebugConnection.java:280)
+	at com.aptana.js.debug.core.internal.model.JSDebugTarget.terminate(JSDebugTarget.java:773)
+	at org.eclipse.debug.core.Launch.terminate(Launch.java:230)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.notifyAppInstallError(AndroidDebugLaunchHelper.java:470)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.handleAppInstallTermination(AndroidDebugLaunchHelper.java:183)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$1(AndroidDebugLaunchHelper.java:161)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$2.handleDebugEvents(AndroidDebugLaunchHelper.java:128)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1119)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1153)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:415)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:47.323
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:57.871
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:58.380
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:58.895
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:59.434
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:58:59.946
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 17:59:00.455
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 17:59:01.299
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:12.432
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:22.980
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:23.496
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:24.009
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:24.520
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:25.029
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:00:25.540
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core 1 0 2013-12-17 18:00:26.227
+!MESSAGE Extension version: 3.0.0.1367525200; protocol v1
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:12.771
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:23.843
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:24.358
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:24.873
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+!STACK 0
+java.io.IOException: Failed to perform handshake
+	at org.chromium.sdk.internal.v8native.JavascriptVmImpl.newIOException(JavascriptVmImpl.java:93)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:104)
+	at org.chromium.sdk.internal.transport.SocketConnection$ReaderThread.run(SocketConnection.java:156)
+Caused by: java.util.concurrent.ExecutionException: java.io.IOException: End of stream
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:100)
+	... 1 more
+Caused by: java.io.IOException: End of stream
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:118)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8$HandshakeTaks.call(Handshaker.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.chromium.sdk.internal.transport.Handshaker$StandaloneV8.perform(Handshaker.java:96)
+	... 1 more
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:25.383
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:25.893
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY org.chromium.debug.core 1 0 2013-12-17 18:36:27.983
+!MESSAGE SDK:org.chromium.sdk.internal.transport.SocketConnection: Shutdown requested
+
+!ENTRY com.aptana.js.debug.core.v8 4 0 2013-12-17 18:36:27.993
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  java.lang.Exception: Failure: Connection closed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+!ENTRY com.appcelerator.titanium.mobile.ui 4 0 2013-12-17 18:36:28.050
+!MESSAGE (Build 3.1.3.201309132423) [ERROR]  Error initiating the debugger connection
+!STACK 1
+org.eclipse.core.runtime.CoreException: Session initialization failed
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1313)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	... 6 more
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+!SUBENTRY 1 com.aptana.js.debug.core.v8 4 0 2013-12-17 18:36:28.050
+!MESSAGE Session initialization failed
+!STACK 0
+org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)

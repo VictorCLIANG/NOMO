@@ -143,7 +143,7 @@ function NavigationBar(win_id) {
 		doneBtnLabel.addEventListener('click', function() {
 			cur_win.close();
 		});
-	} else if ( win_id = 'FriendListWin') {//---------------------Navigation Bar setup for FriendList window---------------------
+	} else if ( win_id == 'FriendListWin') {//---------------------Navigation Bar setup for FriendList window---------------------
 		var cur_win = self.parent;
 		
 		var menuBtn = Ti.UI.createImageView({
@@ -164,7 +164,7 @@ function NavigationBar(win_id) {
 
 		var addBtn = Ti.UI.createImageView({
 			right : 0,
-			image : '/images/nav_ic_add@2x.png'
+			image : '/images/nav_ic_add_friend@2x.png'
 		});
 
 		addBtn.addEventListener('click', function() {
@@ -186,7 +186,10 @@ function NavigationBar(win_id) {
 		leftBtnContainer.add(menuBtn);
 		rightBtnContainer.add(addBtn);
 
-	} else {//-------------------Default Setup with back button
+	} else if(win_id == 'addPlanWin') {//-------------------Default Setup with back button
+		leftBtnContainer.add(backBtnContainer);
+
+	}else {//-------------------Default Setup with back button
 		leftBtnContainer.add(backBtnContainer);
 
 	}

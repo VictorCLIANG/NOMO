@@ -5,6 +5,10 @@ function LogIn() {
 	var self = Ti.UI.createView({
 		backgroundColor : '#424240'
 	});
+
+	var url = "http://experiment.sandbox.net.nz/nomoapi/nomoapi.svc/";
+	
+	Ti.App.baseUrl = url;
 	
 	// Create Textview for username
 
@@ -22,7 +26,7 @@ function LogIn() {
 
 	console.log(tmp);
 
-	var userNameText = Ti.UI.createTextField({
+	var emailText = Ti.UI.createTextField({
 		//height : Titanium.UI.SIZE,
 		width : '85%',
 		top : '40%',
@@ -68,39 +72,110 @@ function LogIn() {
 	});
 
 	self.add(logoImg);
-	self.add(userNameText);
+	self.add(emailText);
 	self.add(passText);
 	self.add(loginButton);
+
+	//--------------Define Login Requests---------------------
+
+	var loginReq = Titanium.Network.createHTTPClient();
+	
+	var checkFirstTimeReq = Titanium.Network.createHTTPClient();
+
+
+	loginReq.onload = function() {
+		var userId = this.responseText;
+		// assing user id to global variable
+
+		if (userId != null) {
+
+			Ti.App.cur_userId = userId;
+
+			checkFirstTimeReq.open("GET", url + 'hasFriendsorEvents');
+			var param = {
+				userId : userId
+			};
+			checkFirstTimeReq.send(param);
+		} else {
+			alert("Invalid sign in, Email or Password is incorrect");
+		}
+
+	};
+
+	loginReq.onerror = function() {
+		alert("Failed to connect to the server");
+	};
 
 	//----create event handler for sign in button
 	loginButton.addEventListener('click', function() {
 
-		var userId = 1;
+		//var userId = 0;
+		//Ti.App.cur_userId = userId;
 
-		//	if(userNameText.value=="admin"&&passText.value=="sushmobile"){
+		var email = emailText.value;
+		var password = passText.value;
 
-		var AddFriendWindow = Ti.UI.createWindow({
-			id : 'addFriendListWin',
-			layout : 'vertical',
-			backgroundColor : '#f7f7f7',
-			navBarHidden : true,
-			modal : true,
-			//url : 'FriendList.js',
-			url : 'AddFriend.js',
-			//fromList : false, // custom variable
-			userId : userId
-		});
-		
-		Ti.App.cur_userId = 1;
-		
-		AddFriendWindow.open();
+		//email = 'me@sush.co.nz';
+		email = 'jim@walker.co.nz';
+		password = '1234';
 
-		//	}else{
-		//		alert("wrong input");
-		//	}
+		loginReq.open("GET", url + 'login');
+		var loginParam = {
+			email : email,
+			password : password
+		};
+
+		loginReq.send(loginParam);
+
 	});
+
+	//---------API for checking friendList----------
+	
+	checkFirstTimeReq.onload = function() {
+		var response = this.responseText;
+		//var response = JSON.parse(json);
+
+		Ti.App.hasFriendOrPlan = response;
+
+		if (response == 'true') {
+
+			var planWindow = Ti.UI.createWindow({
+				id : 'plansWin',
+				url : 'ui/common/Plan.js',
+				modal : true,
+				//fullscreen:true,
+				navBarHidden : true,
+				layout : 'vertical',
+				//userId : userId,
+				backgroundColor : '#f7f7f7'
+			});
+
+			planWindow.open();
+
+		} else {
+			Ti.API.log("Current User " + Ti.App.cur_userId + " has NOOOOOO friends or events");
+
+			var AddFriendWindow = Ti.UI.createWindow({
+				id : 'addFriendListWin',
+				layout : 'vertical',
+				backgroundColor : '#f7f7f7',
+				navBarHidden : true,
+				modal : true,
+				url : 'AddFriend.js',
+				userId : userId
+			});
+
+			AddFriendWindow.open();
+
+		}
+	};
+
+	checkFirstTimeReq.onerror = function() {
+		alert("Failed to connect to the server");
+	};
+	//---------------------------------------------------
 
 	return self;
 }
 
-module.exports = LogIn; 
+module.exports = LogIn;

@@ -84,3 +84,78 @@ Caused by: java.lang.Exception: Failure: Connection closed
 [星期二 十二月 17 02:12:33 NZDT 2013] Connection closed
 [星期二 十二月 17 02:15:27 NZDT 2013] Connection closed
 [星期二 十二月 17 02:17:44 NZDT 2013] Connection closed
+[Tue Dec 17 10:40:52 NZDT 2013] java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+[Tue Dec 17 12:31:14 NZDT 2013] Connection closed
+[Tue Dec 17 12:39:07 NZDT 2013] Connection closed
+[Tue Dec 17 12:49:25 NZDT 2013] Connection closed
+[Tue Dec 17 12:50:48 NZDT 2013] Connection closed
+[Tue Dec 17 13:30:52 NZDT 2013] Connection closed
+[Tue Dec 17 13:38:36 NZDT 2013] Connection closed
+[Tue Dec 17 13:54:09 NZDT 2013] Connection closed
+[Tue Dec 17 13:59:32 NZDT 2013] Connection closed
+[Tue Dec 17 14:03:37 NZDT 2013] Connection closed
+[Tue Dec 17 14:16:55 NZDT 2013] Connection closed
+[Tue Dec 17 14:19:57 NZDT 2013] Connection closed
+[Tue Dec 17 14:32:39 NZDT 2013] Connection closed
+[Tue Dec 17 14:39:11 NZDT 2013] Connection closed
+[Tue Dec 17 14:44:41 NZDT 2013] Connection closed
+[Tue Dec 17 14:48:32 NZDT 2013] Connection closed
+[Tue Dec 17 15:06:19 NZDT 2013] Connection closed
+[Tue Dec 17 16:43:23 NZDT 2013] Connection closed
+[Tue Dec 17 16:47:37 NZDT 2013] Connection closed
+[Tue Dec 17 16:50:51 NZDT 2013] Connection closed
+[Tue Dec 17 16:53:41 NZDT 2013] Connection closed
+[Tue Dec 17 16:56:02 NZDT 2013] Connection closed
+[Tue Dec 17 17:00:15 NZDT 2013] Connection closed
+[Tue Dec 17 17:13:59 NZDT 2013] Connection closed
+[Tue Dec 17 17:18:28 NZDT 2013] Connection closed
+[Tue Dec 17 17:21:47 NZDT 2013] Connection closed
+[Tue Dec 17 17:26:11 NZDT 2013] Connection closed
+[Tue Dec 17 17:27:32 NZDT 2013] Connection closed
+[Tue Dec 17 17:36:40 NZDT 2013] Connection closed
+[Tue Dec 17 17:58:47 NZDT 2013] Connection closed
+[Tue Dec 17 18:00:12 NZDT 2013] Connection closed
+[Tue Dec 17 18:36:12 NZDT 2013] Connection closed
+[Tue Dec 17 18:36:28 NZDT 2013] org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
