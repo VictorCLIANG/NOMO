@@ -4,23 +4,15 @@
 function LogIn() {
 
 	//var cur_win = Ti.UI.currentWindow;
-	
-	var self = Ti.UI.createView({
+
+	var self = Ti.UI.createScrollView({
 		backgroundColor : '#424240'
 	});
 
 	var url = "http://experiment.sandbox.net.nz/nomoapi/nomoapi.svc/";
 
 	Ti.App.baseUrl = url;
-	
-	//-----------LOADING SCREEN------------------
-	
-	//var LoadingScreen = require('ui/common/Loading');
-	//var loadingScreen = new LoadingScreen();
 
-	//self.add(loadingScreen);
-	//---------------------------------------------
-	
 	// Create Textview for username
 
 	var logoImg = Ti.UI.createImageView({
@@ -95,10 +87,9 @@ function LogIn() {
 
 	loginReq.onload = function() {
 		var userId = this.responseText;
-		// assing user id to global variable
 
 		if (userId != null) {
-
+			// assing user id to global variable
 			Ti.App.cur_userId = userId;
 
 			checkFirstTimeReq.open("GET", url + 'hasFriendsorEvents');
@@ -114,19 +105,15 @@ function LogIn() {
 
 	loginReq.onerror = function() {
 		alert("Failed to connect to the server");
-		//loadingScreen.hide();
 	};
 
 	//----create event handler for sign in button
 	loginButton.addEventListener('click', function() {
-
-		//var userId = 0;
+		//var email = emailText.value;
+		//var password = passText.value;
 		//Ti.App.cur_userId = userId;
-
-		//loadingScreen.show();
-
-		var email = emailText.value;
-		var password = passText.value;
+		//Ti.API.log(email);
+		//Ti.API.log(password);
 
 		//email = 'me@sush.co.nz';
 		//email = 'jim@sush.co.nz';
@@ -134,8 +121,8 @@ function LogIn() {
 
 		loginReq.open("GET", url + 'login');
 		var loginParam = {
-			email : email,
-			password : password
+			email : emailText.value,
+			password : passText.value
 		};
 
 		loginReq.send(loginParam);
@@ -162,7 +149,6 @@ function LogIn() {
 				//userId : userId,
 				backgroundColor : '#f7f7f7'
 			});
-			//loadingScreen.hide();
 			planWindow.open();
 
 		} else {
@@ -178,14 +164,13 @@ function LogIn() {
 				userId : Ti.App.cur_userId
 			});
 
-			//loadingScreen.hide();
 			AddFriendWindow.open();
 		}
 	};
 
 	checkFirstTimeReq.onerror = function() {
 		alert("Failed to connect to the server");
-		//loadingScreen.hide();
+
 	};
 	//---------------------------------------------------
 
