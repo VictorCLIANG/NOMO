@@ -3,6 +3,7 @@
 <booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="false"/>
 <stringAttribute key="ATTR_LOG_LEVEL" value="Info"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="NoMo"/>
+<stringAttribute key="abi" value="x86"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/NoMo"/>
 </listAttribute>
@@ -11,4 +12,6 @@
 </listAttribute>
 <booleanAttribute key="overrideDebugPreferences" value="false"/>
 <stringAttribute key="process_factory_id" value="com.appcelerator.titanium.mobile.ui.androidLogLevelFilteringProcessFactory"/>
+<stringAttribute key="screen_type" value="HVGA"/>
+<stringAttribute key="sdk_version" value="Android 4.3"/>
 </launchConfiguration>

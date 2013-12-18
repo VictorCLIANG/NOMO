@@ -6,6 +6,9 @@ var self = Ti.UI.currentWindow;
 
 self.id = 'FriendListWindow';
 
+var getFriendListReq = Titanium.Network.createHTTPClient();
+var getFriendRequestReq = Titanium.Network.createHTTPClient();
+
 var userId = self.userId;
 
 var NavigationBar = require('ui/common/NavigationBar');
@@ -34,14 +37,6 @@ MainContentContainer.add(tabContainer);
 
 self.add(MainContentContainer);
 //---------------------------------------
-//------------define APi--------------------
-//------get friend list Req ---------------
-var getFriendListReq = Titanium.Network.createHTTPClient();
-
-
-
-
-
 
 //------------------------------main Content
 var tabView = Ti.UI.createView({
@@ -90,7 +85,7 @@ var newNotificationLabel = Ti.UI.createLabel({
 	text : 'New!',
 	color : '#5dc2d6'
 });
-
+//-------------event for RIGHT TAB BUTTON
 rightBtnContainer.addEventListener('click', function() {
 	Ti.API.log('rightBtnClicked');
 	//---------- tab button display change
@@ -103,11 +98,17 @@ rightBtnContainer.addEventListener('click', function() {
 	LeftBtn.setColor('#5dc2d6');
 	//
 
+	getFriendRequestReq.open("GET", Ti.App.baseUrl + 'getrequesters');
+	var getRequestReqParam = {
+		friendId : Ti.App.cur_userId
+	};
+	getFriendRequestReq.send(getRequestReqParam);
+
 	tabContainer.remove(flist);
 	tabContainer.add(Rlist);
 
 });
-
+//-------------event for LEFT TAB BUTTON
 LeftBtn.addEventListener('click', function() {
 	Ti.API.log('leftBtnClicksed');
 	//---------- tab button display change
@@ -119,6 +120,11 @@ LeftBtn.addEventListener('click', function() {
 	LeftBtn.setBackgroundColor('#5dc2d6');
 	LeftBtn.setColor('white');
 	//
+	getFriendListReq.open("GET", Ti.App.baseUrl + 'getFriends');
+	var getFriendsReqParam = {
+		userId : Ti.App.cur_userId
+	};
+	getFriendListReq.send(getFriendsReqParam);
 
 	tabContainer.remove(Rlist);
 	tabContainer.add(flist);
@@ -132,154 +138,289 @@ tabView.add(rightBtnContainer);
 
 tabContainer.add(tabView);
 
-//---------table View Contents---------------------------------
-var f_data = [{
-	name : "Ella Jones-Everette"
-}, {
-	name : "Elisa Abraham"
-}, {
-	name : "Elise Barnes"
-}, {
-	name : "Eliza Glasser"
-}, {
-	name : "John Smith"
-}, {
-	name : "Neil Anderson"
-}];
-
-var f_rowData = [];
-
-for (var i = 0; i < f_data.length; i++) {
-
-	var name = Ti.UI.createLabel({
-		left : 0,
-		font : {
-			fontSize : '20dp'
-		},
-		color : 'black',
-		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		text : f_data[i].name
-	});
-
-	var row = Ti.UI.createView({
-		top : '5%',
-		bottom : '5%',
-		left : '5%',
-		right : '5%',
-		height : '50dp'
-	});
-
-	row.add(name);
-
-	var rowContainer = Ti.UI.createTableViewRow({
-		layout : 'horizontal'
-	});
-
-	rowContainer.add(row);
-
-	f_rowData.push(rowContainer);
-}
+var Rlist = Ti.UI.createTableView({
+	id : 'RequestListView',
+	layout : 'vertical'
+});
 
 var flist = Ti.UI.createTableView({
 	id : 'FriendListView',
-	data : f_rowData,
 	layout : 'vertical'
 });
 
-//----------Request List --------------------
+var f_rowData;
 
-var r_data = [{
-	name : "Ella Jones-Everette"
-}, {
-	name : "Elisa Abraham"
-}, {
-	name : "Elise Barnes"
-}, {
-	name : "Eliza Glasser"
-}, {
-	name : "John Smith"
-}, {
-	name : "Neil Anderson"
-}];
+tabContainer.add(flist);
 
-var r_rowData = [];
+//------------define APi--------------------
+//------get friend list Req ---------------
 
-for (var i = 0; i < r_data.length; i++) {
+getFriendListReq.onload = function() {
 
-	var name = Ti.UI.createLabel({
-		left : 0,
-		font : {
-			fontSize : '20dp'
-		},
-		color : 'black',
-		textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
-		text : r_data[i].name
-	});
+	Ti.API.log('get Friend List request onLoad');
 
-	var row = Ti.UI.createView({
-		top : '5%',
-		bottom : '5%',
-		left : '5%',
-		right : '5%',
-		height : '50dp'
-	});
+	var f_data = [];
 
-	var buttonContainer = Ti.UI.createView({
-		width : '30%',
-		right : 0
-	});
+	f_rowData = [];
 
-	var acceptBtn = Ti.UI.createImageView({
-		left : 0,
-		image : '/images/request_accept@2x.png',
-		height : '30dp',
-		clickItem : 'accept'
-	});
+	var json = this.responseText;
+	f_data = JSON.parse(json);
 
-	var declineBtn = Ti.UI.createImageView({
-		right : 0,
-		image : '/images/request_decline@2x.png',
-		height : '30dp',
-		clickItem : 'decline'
-	});
+	Ti.API.log(json);
+	if (json === "[]") {
+		Ti.API.log("empty");
+		var label = Ti.UI.createLabel({
+			left : 0,
+			font : {
+				fontSize : '20dp'
+			},
+			color : 'black',
+			textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+			text : 'No requests Found'
+		});
 
-	buttonContainer.add(acceptBtn);
-	buttonContainer.add(declineBtn);
+		var row = Ti.UI.createView({
+			//top : '5%',
+			//bottom : '5%',
+			left : '5%',
+			right : '5%',
+			height : '50dp'
+		});
 
-	row.add(name);
-	row.add(buttonContainer);
-	//-------------------------------------
+		var rowContainer = Ti.UI.createTableViewRow({
+			layout : 'horizontal'
+		});
 
-	var rowContainer = Ti.UI.createTableViewRow({
-		layout : 'horizontal'
-	});
+		row.add(label);
+		rowContainer.add(row);
+		f_rowData.push(rowContainer);
 
-	rowContainer.add(row);
+	} else {
+		for (var i = 0; i < f_data.length; i++) {
+			Ti.API.log("ID:" + f_data.ID);
+			var name = Ti.UI.createLabel({
+				left : 0,
+				font : {
+					fontSize : '20dp'
+				},
+				color : 'black',
+				textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+				text : f_data[i].FirstName + " " + f_data[i].LastName
+			});
 
-	r_rowData.push(rowContainer);
-}
+			var dLable = Ti.UI.createLabel({
+				text : 'Delete',
+				font : {
+					fontSize : '15dp'
+				},
+				color : 'white'
+			});
 
-var Rlist = Ti.UI.createTableView({
-	id : 'RequestListView',
-	data : r_rowData,
-	layout : 'vertical'
-});
+			var dbtn = Ti.UI.createView({
+				height : '100%',
+				width : '30%',
+				backgroundColor : '#5dc2d6',
+				right : 0,
+				clickItem : 'deleteBtn',
+				fid : f_data[i].ID,
+				visible : false
+			});
+
+			dbtn.add(dLable);
+
+			var row = Ti.UI.createView({
+				//top : '5%',
+				//bottom : '5%',
+				left : '5%',
+				//right : '5%',
+				clickItem : 'row',
+				height : '50dp'
+			});
+
+			row.add(name);
+			row.add(dbtn);
+
+			var rowContainer = Ti.UI.createTableViewRow({
+				layout : 'horizontal'
+			});
+
+			rowContainer.add(row);
+			//rowContainer.add(dbtn);
+
+			f_rowData.push(rowContainer);
+		}
+
+	}
+
+	flist.setData(f_rowData);
+};
+
+getFriendListReq.onerror = function() {
+	alert("Failed to connect to the server");
+};
+
+//----------get friend request list------------
+
+getFriendRequestReq.onload = function() {
+
+	Ti.API.log('get Friend requests Request onLoad');
+
+	var r_data = [];
+
+	var r_rowData = [];
+
+	var json = this.responseText;
+	r_data = JSON.parse(json);
+
+	Ti.API.log(json);
+
+	if (json === "[]") {
+
+		var label = Ti.UI.createLabel({
+			left : 0,
+			font : {
+				fontSize : '20dp'
+			},
+			color : 'black',
+			textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+			text : 'No requests Found'
+		});
+
+		var row = Ti.UI.createView({
+			//top : '5%',
+			//bottom : '5%',
+			left : '5%',
+			right : '5%',
+			height : '50dp'
+		});
+
+		var rowContainer = Ti.UI.createTableViewRow({
+			layout : 'horizontal'
+		});
+
+		row.add(label);
+		rowContainer.add(row);
+		r_rowData.push(rowContainer);
+		newNotificationLabel.hide();
+
+	} else {
+		//----------Request List --------------------
+		for (var i = 0; i < r_data.length; i++) {
+
+			var name = Ti.UI.createLabel({
+				left : 0,
+				font : {
+					fontSize : '20dp'
+				},
+				color : 'black',
+				textAlign : Ti.UI.TEXT_ALIGNMENT_CENTER,
+				text : r_data[i].FirstName + " " + r_data[i].LastName
+			});
+
+			var row = Ti.UI.createView({
+				//top : '5%',
+				//bottom : '5%',
+				left : '5%',
+				right : '5%',
+				height : '50dp'
+			});
+
+			var buttonContainer = Ti.UI.createView({
+				width : '30%',
+				right : 0
+			});
+
+			var acceptBtn = Ti.UI.createImageView({
+				left : 0,
+				image : '/images/request_accept@2x.png',
+				height : '30dp',
+				id : r_data[i].ID,
+				clickItem : 'accept'
+			});
+
+			var declineBtn = Ti.UI.createImageView({
+				right : 0,
+				image : '/images/request_decline@2x.png',
+				height : '30dp',
+				id : r_data[i].ID,
+				clickItem : 'decline'
+			});
+
+			buttonContainer.add(acceptBtn);
+			buttonContainer.add(declineBtn);
+
+			row.add(name);
+			row.add(buttonContainer);
+			//-------------------------------------
+
+			var rowContainer = Ti.UI.createTableViewRow({
+				layout : 'horizontal'
+			});
+
+			Ti.API.log("name: " + r_data[i].FirstName + " " + r_data[i].LastName);
+
+			rowContainer.add(row);
+
+			r_rowData.push(rowContainer);
+		}
+		newNotificationLabel.show();
+	}
+
+	Rlist.setData(r_rowData);
+};
+
+getFriendRequestReq.onerror = function() {
+	alert("Failed to connect to the server");
+};
+
+//----------Accept friends Requests-----------
+
+var acceptReq = Titanium.Network.createHTTPClient();
+
+acceptReq.onload = function() {
+};
+
+acceptReq.onerror = function() {
+	alert("Failed to connect to the server");
+};
+//----------Decline friends Requests----------
+
+var declineReq = Titanium.Network.createHTTPClient();
+
+declineReq.onload = function() {
+};
+
+declineReq.onerror = function() {
+	alert("Failed to connect to the server");
+};
+//----------Remove Friend request--------------
+
+var removeFriendReq = Titanium.Network.createHTTPClient();
+
+removeFriendReq.onload = function() {
+};
+
+removeFriendReq.onerror = function() {
+	alert("Failed to connect to the server");
+};
 
 //------EVENT LISTENERs----------------
 Rlist.addEventListener('click', function(e) {
 	Ti.API.log("Row Number:" + e.index);
 	var rowIndex = e.index;
 	var clickedItem = e.source.clickItem;
+	var friendId = e.source.id;
+
+	Ti.API.log("friendId:" + friendId);
+	Ti.API.log("UserId:" + Ti.App.cur_userId);
+
 	Ti.API.log("Clicked On:" + clickedItem);
 
 	if (clickedItem == 'accept') {
-		r_data.splice(rowIndex, 1);
-		Rlist.deleteRow(rowIndex);
-	} else if (clickedItem == 'decline') {
 
 		var confirm = Titanium.UI.createAlertDialog({
-			title : 'Decline',
-			message : 'Are you sure you want to ignore this request?',
+			title : 'Accept',
+			message : 'Are you sure you want to accept request?',
 			buttonNames : ['Yes', 'No'],
 			cancel : 1
 		});
@@ -289,7 +430,41 @@ Rlist.addEventListener('click', function(e) {
 				return false;
 			}
 			if (e1.index === 0) {
-				r_data.splice(rowIndex, 1);
+				acceptReq.open("GET", Ti.App.baseUrl + 'ApproveFriendRequest');
+				var acceptReqParam = {
+					userId : friendId,
+					friendId : Ti.App.cur_userId
+				};
+				acceptReq.send(acceptReqParam);
+				//r_data.splice(rowIndex, 1);
+				Rlist.deleteRow(rowIndex);
+			}
+		});
+		confirm.show();
+
+	} else if (clickedItem == 'decline') {
+
+		var confirm = Titanium.UI.createAlertDialog({
+			title : 'Decline',
+			message : 'Are you sure you want to ignore request?',
+			buttonNames : ['Yes', 'No'],
+			cancel : 1
+		});
+
+		confirm.addEventListener('click', function(e1) {
+			if (e1.cancel === e1.index || e1.cancel === true) {
+				return false;
+			}
+			if (e1.index === 0) {
+				declineReq.open("GET", Ti.App.baseUrl + 'DeclineFriendRequest');
+				var declineReqParam = {
+					//userId:Ti.App.cur_userId,
+					//friendId:friendId
+					userId : friendId,
+					friendId : Ti.App.cur_userId //-------its the otherway around-------
+				};
+				declineReq.send(declineReqParam);
+				//.splice(rowIndex, 1);
 				Rlist.deleteRow(rowIndex);
 			}
 		});
@@ -299,28 +474,78 @@ Rlist.addEventListener('click', function(e) {
 
 });
 
-declineBtn.addEventListener('click', function() {
+//---------------------------
+flist.addEventListener('click', function(e) {
 
-	var confirm = Titanium.UI.createAlertDialog({
-		title : 'Decline',
-		message : 'Are you sure you want to ignore this request?',
-		buttonNames : ['Yes', 'No'],
-		cancel : 1
-	});
+	Ti.API.log("Row Number:" + e.index);
+	var rowIndex = e.index;
+	var clickedItem = e.source.clickItem;
+	var friendId = e.source.fid;
 
-	confirm.addEventListener('click', function(e) {
-		if (e.cancel === e.index || e.cancel === true) {
-			return false;
+	Ti.API.log("friendId:" + friendId);
+	Ti.API.log("UserId:" + Ti.App.cur_userId);
+
+	Ti.API.log("Clicked On:" + clickedItem);
+	//Ti.API.log("Clicked On:" + e.source.children[1].visible);
+	if(clickedItem == 'row'){
+		if(e.source.children[1].visible == false){
+			e.source.children[1].show();
+		}else{
+			e.source.children[1].hide();
 		}
-		if (e.index === 0) {
-			r_data.splice(i, 1);
-		}
-	});
+		
+	}
 
-	confirm.show();
+	if (clickedItem == 'deleteBtn') {
+
+		var confirm = Titanium.UI.createAlertDialog({
+			title : 'Remove',
+			message : 'Are you sure you want to Remove this Friend?',
+			buttonNames : ['Yes', 'No'],
+			cancel : 1
+		});
+
+		confirm.addEventListener('click', function(e1) {
+			if (e1.cancel === e1.index || e1.cancel === true) {
+				return false;
+			}
+			if (e1.index === 0) {
+				removeFriendReq.open("GET",Ti.App.baseUrl + 'RemoveFriend');
+				var removeFriendReqParam = {
+					userId : Ti.App.cur_userId,
+					friendId : friendId
+				};
+				removeFriendReq.send(removeFriendReqParam);
+				flist.deleteRow(rowIndex);
+				//.splice(rowIndex, 1);
+				Rlist.deleteRow(rowIndex);
+			}
+		});
+
+		confirm.show();
+
+	}
+
 });
 
-//---------------------------
+//------Load Default Friend List--------------------------------
 
-tabContainer.add(flist);
+getFriendListReq.open("GET", Ti.App.baseUrl + 'getFriends');
+
+var getFriendsReqParam = {
+	userId : Ti.App.cur_userId
+};
+
+getFriendListReq.send(getFriendsReqParam);
+
+//-----------------------Determine if New! notification is shown on load---
+getFriendRequestReq.open("GET", Ti.App.baseUrl + 'getrequesters');
+var getRequestReqParam = {
+	friendId : Ti.App.cur_userId
+};
+getFriendRequestReq.send(getRequestReqParam);
+
+Ti.API.log(f_rowData);
+
+//------------------------------------------------------
 

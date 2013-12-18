@@ -2,13 +2,24 @@
  * LogIn Page Component Constructor
  */
 function LogIn() {
+
+	//var cur_win = Ti.UI.currentWindow;
+	
 	var self = Ti.UI.createView({
 		backgroundColor : '#424240'
 	});
 
 	var url = "http://experiment.sandbox.net.nz/nomoapi/nomoapi.svc/";
-	
+
 	Ti.App.baseUrl = url;
+	
+	//-----------LOADING SCREEN------------------
+	
+	//var LoadingScreen = require('ui/common/Loading');
+	//var loadingScreen = new LoadingScreen();
+
+	//self.add(loadingScreen);
+	//---------------------------------------------
 	
 	// Create Textview for username
 
@@ -79,9 +90,8 @@ function LogIn() {
 	//--------------Define Login Requests---------------------
 
 	var loginReq = Titanium.Network.createHTTPClient();
-	
-	var checkFirstTimeReq = Titanium.Network.createHTTPClient();
 
+	var checkFirstTimeReq = Titanium.Network.createHTTPClient();
 
 	loginReq.onload = function() {
 		var userId = this.responseText;
@@ -104,6 +114,7 @@ function LogIn() {
 
 	loginReq.onerror = function() {
 		alert("Failed to connect to the server");
+		//loadingScreen.hide();
 	};
 
 	//----create event handler for sign in button
@@ -112,12 +123,14 @@ function LogIn() {
 		//var userId = 0;
 		//Ti.App.cur_userId = userId;
 
+		//loadingScreen.show();
+
 		var email = emailText.value;
 		var password = passText.value;
 
 		//email = 'me@sush.co.nz';
-		email = 'jim@walker.co.nz';
-		password = '1234';
+		//email = 'jim@sush.co.nz';
+		//password = '1234';
 
 		loginReq.open("GET", url + 'login');
 		var loginParam = {
@@ -130,7 +143,7 @@ function LogIn() {
 	});
 
 	//---------API for checking friendList----------
-	
+
 	checkFirstTimeReq.onload = function() {
 		var response = this.responseText;
 		//var response = JSON.parse(json);
@@ -149,7 +162,7 @@ function LogIn() {
 				//userId : userId,
 				backgroundColor : '#f7f7f7'
 			});
-
+			//loadingScreen.hide();
 			planWindow.open();
 
 		} else {
@@ -162,16 +175,17 @@ function LogIn() {
 				navBarHidden : true,
 				modal : true,
 				url : 'AddFriend.js',
-				userId : userId
+				userId : Ti.App.cur_userId
 			});
 
+			//loadingScreen.hide();
 			AddFriendWindow.open();
-
 		}
 	};
 
 	checkFirstTimeReq.onerror = function() {
 		alert("Failed to connect to the server");
+		//loadingScreen.hide();
 	};
 	//---------------------------------------------------
 

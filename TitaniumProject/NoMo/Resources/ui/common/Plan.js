@@ -1,8 +1,8 @@
 /*
- *
- *
- */
-
+*
+*
+*/
+//Ti.UI.setBackgroundColor('#f7f7f7');
 var self = Ti.UI.currentWindow;
 
 var userId = self.userId;
@@ -15,6 +15,7 @@ self.add(navBar);
 //---------------------------------------
 
 var MainContentContainer = Ti.UI.createView({
+	backgroundColor : '#f7f7f7',
 	horizontalWrap : false
 	//layout : 'horizontal'
 });
@@ -273,7 +274,6 @@ self.addEventListener('focus', function() {
 			data : rowData
 		});
 
-
 		if (MainContentContainer.children[1]) {
 			Ti.API.log("Old Content about to be removed, on stack 2: children[1]");
 			MainContentContainer.remove(MainContentContainer.children[1]);
@@ -354,9 +354,9 @@ self.addEventListener('focus', function() {
 				url : 'AddPlan.js',
 				layout : 'vertical'
 			});
-			
+
 			AddPlanWindow.open();
-			
+
 		});
 
 	}
@@ -369,6 +369,7 @@ MainContentContainer.addEventListener('swipe', function(e) {
 		if (menu.toggle == false) {
 			menu.setLeft('0%');
 			menu.toggle = true;
+			
 		};
 
 	}
@@ -376,6 +377,7 @@ MainContentContainer.addEventListener('swipe', function(e) {
 		if (menu.toggle == true) {
 			menu.setLeft('-40%');
 			menu.toggle = false;
+			MainContentContainer.setBackgroundColor('#f7f7f7');
 		};
 
 	}

@@ -1,3 +1,31 @@
-[星期三 十二月 18 01:46:39 NZDT 2013] Connection closed
-[星期三 十二月 18 01:50:46 NZDT 2013] Connection closed
-[星期三 十二月 18 01:52:14 NZDT 2013] Connection closed
+[Wed Dec 18 13:07:16 NZDT 2013] Connection closed
+[Wed Dec 18 13:12:56 NZDT 2013] Connection closed
+[Wed Dec 18 18:43:26 NZDT 2013] Connection closed
+[Wed Dec 18 18:46:49 NZDT 2013] Connection closed
+[Wed Dec 18 19:05:42 NZDT 2013] Connection closed
+[Wed Dec 18 19:06:52 NZDT 2013] Connection closed
+[Wed Dec 18 19:49:24 NZDT 2013] Connection closed
+[Wed Dec 18 20:04:08 NZDT 2013] Connection closed
+[Wed Dec 18 20:16:18 NZDT 2013] Connection closed
+[Wed Dec 18 21:18:32 NZDT 2013] java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.chromium.sdk.internal.transport.SocketWrapper.<init>(SocketWrapper.java:37)
+	at org.chromium.sdk.internal.transport.SocketConnection.attach(SocketConnection.java:288)
+	at org.chromium.sdk.internal.transport.SocketConnection.start(SocketConnection.java:443)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:120)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1288)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+[Wed Dec 18 22:17:22 NZDT 2013] Connection closed
+[Wed Dec 18 22:21:14 NZDT 2013] Connection closed

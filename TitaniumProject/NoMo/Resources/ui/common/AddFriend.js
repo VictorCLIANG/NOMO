@@ -65,8 +65,7 @@ var content = Ti.UI.createTableView({
 
 var sendFriendReq = Titanium.Network.createHTTPClient();
 
-sendFriendReq.onload = function() {
-	alert("A friend request has been sent");
+sendFriendReq.onload = function(e) {
 };
 
 sendFriendReq.onerror = function() {
@@ -87,7 +86,7 @@ searchFriendReq.onload = function() {
 	if (data != null) {
 
 		for (var i = 0; i < data.length; i++) {
-			Ti.API.log(data[i].Name);
+			Ti.API.log(data[i].HasFriendRequestFromUser);
 			var name = Ti.UI.createLabel({
 				left : 0,
 				font : {
@@ -111,14 +110,13 @@ searchFriendReq.onload = function() {
 				fid : data[i].ID,
 				//image:'/images/friends_icrequest@2x.png',
 				height : '70%',
-				isSent : false,
+				isSent : data[i].ReceivedFriendRequestFromUser,
 				clickedItem : 'btn',
 				right : '10dp'
 			});
 
-			if (data[i].HasFriendRequestFromUser == 'true') {
+			if (data[i].ReceivedFriendRequestFromUser == true) {
 				friendListBtn.setImage('/images/friends_icsent@2x.png');
-				friendListBtn.isSent = 'true';
 			} else {
 				friendListBtn.setImage('/images/friends_icrequest@2x.png');
 			}
@@ -136,25 +134,27 @@ searchFriendReq.onload = function() {
 		}
 	}
 	content.setData(rowData);
-	//self.remove(self.children[2]);
+	if (Ti.App.hasFriendOrPlan == 'false') {
+		self.remove(self.children[2]);
+	}
 	self.add(content);
-	
+
 	content.addEventListener('click', function(e) {
 
 		if (e.source.clickedItem == 'btn') {
+			Ti.API.log("---------------------");
 			Ti.API.log(e.source.isSent);
+			Ti.API.log("userId: " + Ti.App.cur_userId);
+			Ti.API.log("friendId: " + e.source.fid);
 			if (e.source.isSent == false) {
-				//alert("A friend request has been sent to " + e.source.fname);
-				e.source.isSent = true;
-				e.source.image = "/images/friends_icsent@2x.png";
-
+				alert("A friend request will be send to " + e.source.fname);
 				sendFriendReq.open("GET", Ti.App.baseUrl + 'CreateFriendRequest');
 				var sendFriendReqPara = {
 					userId : Ti.App.cur_userId,
 					friendId : e.source.fid
 				};
 				sendFriendReq.send(sendFriendReqPara);
-
+				e.source.image = "/images/friends_icsent@2x.png";
 			}
 		}
 	});
@@ -165,7 +165,7 @@ searchFriendReq.onerror = function() {
 };
 
 //-----------------when friend list is empty-------------------
-if (Ti.App.isFirstTime == true) {
+if (Ti.App.hasFriendOrPlan == 'false') {
 	var emptyListContent = Ti.UI.createView({
 		id : 'emptyListContent',
 		layout : 'vertical'

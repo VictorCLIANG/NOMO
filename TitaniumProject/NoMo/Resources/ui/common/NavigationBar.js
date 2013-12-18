@@ -67,7 +67,7 @@ function NavigationBar(win_id) {
 
 	if (win_id == 'plansWin') {//---------------------Navigation Setup for Plans Window-----------------------------
 		//var cur_win = self.parent;
-		
+
 		var menuBtn = Ti.UI.createImageView({
 			left : 0,
 			image : '/images/nav_ic_menu@2x.png'
@@ -102,7 +102,7 @@ function NavigationBar(win_id) {
 				url : 'AddPlan.js',
 				layout : 'vertical'
 			});
-			
+
 			AddPlanWindow.open();
 
 		});
@@ -127,40 +127,24 @@ function NavigationBar(win_id) {
 			});
 
 			planWindow.open();
-			
+
 			var cur_win = self.parent;
-			
+
 			cur_win.close();
 
 		});
 
 	} else if (win_id == 'addFriendWin') {
 		var cur_win = self.parent;
-		
+
 		leftBtnContainer.add(backBtnContainer);
 
 		rightBtnContainer.add(doneBtnLabel);
 		doneBtnLabel.addEventListener('click', function() {
 			cur_win.close();
 		});
-	} else if ( win_id == 'FriendListWin') {//---------------------Navigation Bar setup for FriendList window---------------------
+	} else if (win_id == 'FriendListWin') {//---------------------Navigation Bar setup for FriendList window---------------------
 		var cur_win = self.parent;
-		
-		var menuBtn = Ti.UI.createImageView({
-			left : 0,
-			image : '/images/nav_ic_menu@2x.png'
-		});
-
-		menuBtn.addEventListener('click', function() {
-			var menuObj = self.parent.children[1].children[0];
-			if (menuObj.toggle == false) {
-				menuObj.setLeft('0%');
-				menuObj.toggle = true;
-			} else {
-				menuObj.setLeft('-40%');
-				menuObj.toggle = false;
-			}
-		});
 
 		var addBtn = Ti.UI.createImageView({
 			right : 0,
@@ -182,14 +166,13 @@ function NavigationBar(win_id) {
 			AddFriendWindow.open();
 
 		});
-
-		leftBtnContainer.add(menuBtn);
+		leftBtnContainer.add(backBtnContainer);
 		rightBtnContainer.add(addBtn);
 
-	} else if(win_id == 'addPlanWin') {//-------------------Default Setup with back button
+	} else if (win_id == 'addPlanWin') {//-------------------Default Setup with back button
 		leftBtnContainer.add(backBtnContainer);
 
-	}else {//-------------------Default Setup with back button
+	} else {//-------------------Default Setup with back button
 		leftBtnContainer.add(backBtnContainer);
 
 	}
@@ -201,7 +184,7 @@ function NavigationBar(win_id) {
 	self.add(leftBtnContainer);
 	self.add(logoImg);
 	self.add(rightBtnContainer);
-	
+
 	Ti.API.log(win_id);
 
 	return self;

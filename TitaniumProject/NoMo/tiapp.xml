@@ -4,7 +4,7 @@
     <name>NoMo</name>
     <version>1.0</version>
     <publisher>Victor</publisher>
-    <url>http://sush.co.nz</url>
+    <url>http://www.sush.co.nz</url>
     <description>not specified</description>
     <copyright>2013 by Victor</copyright>
     <icon>appicon.png</icon>
@@ -15,7 +15,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>38558505-9b21-4b2e-a352-e8fd7e59fb78</guid>
+    <guid>baeca9b0-ee54-4454-9eea-ca8064d357f4</guid>
     <property name="ti.ui.defaultunit" type="string">system</property>
     <iphone>
         <orientations device="iphone">
