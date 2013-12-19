@@ -8,7 +8,11 @@ function LogIn() {
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#424240'
 	});
-
+	
+	Ti.include("Loading.js");
+	
+	TiLoad.init({ rotate: false });
+	
 	var url = "http://experiment.sandbox.net.nz/nomoapi/nomoapi.svc/";
 
 	Ti.App.baseUrl = url;
@@ -99,12 +103,14 @@ function LogIn() {
 			checkFirstTimeReq.send(param);
 		} else {
 			alert("Invalid sign in, Email or Password is incorrect");
+			TiLoad.hide();
 		}
 
 	};
 
 	loginReq.onerror = function() {
 		alert("Failed to connect to the server");
+		TiLoad.hide();
 	};
 
 	//----create event handler for sign in button
@@ -117,9 +123,12 @@ function LogIn() {
 		var email;
 		var password;
 		
-		//email = 'jim@sush.co.nz';
+		
 		email = emailText.value;
 		password = passText.value;
+		
+		//email = 'jim@sush.co.nz';
+		//password = '1234';
 		
 		Ti.API.log("EMAIL: '"+email+"'");
 		Ti.API.log("PWD: '"+password+"'");
@@ -131,6 +140,9 @@ function LogIn() {
 		};
 		Ti.API.log("OPEND");
 		loginReq.send(loginParam);
+		
+		TiLoad.show();
+		
 		Ti.API.log("WITHIN LOGIN");
 	});
 
@@ -142,6 +154,7 @@ function LogIn() {
 
 		Ti.App.hasFriendOrPlan = response;
 		Ti.API.log("WHIN CHEKCER!");
+		TiLoad.hide();
 		if (response == 'true') {
 
 			var planWindow = Ti.UI.createWindow({
@@ -176,7 +189,7 @@ function LogIn() {
 
 	checkFirstTimeReq.onerror = function() {
 		alert("Failed to connect to the server");
-
+		TiLoad.hide();
 	};
 	//---------------------------------------------------
 

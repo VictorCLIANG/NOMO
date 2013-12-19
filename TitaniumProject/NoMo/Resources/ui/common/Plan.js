@@ -7,6 +7,12 @@ var self = Ti.UI.currentWindow;
 
 var userId = self.userId;
 
+Ti.include("Loading.js");
+
+TiLoad.init({
+	rotate : false
+});
+
 //-----------Navigation Bar------------
 var NavigationBar = require('ui/common/NavigationBar');
 var navBar = new NavigationBar('plansWin');
@@ -369,7 +375,7 @@ MainContentContainer.addEventListener('swipe', function(e) {
 		if (menu.toggle == false) {
 			menu.setLeft('0%');
 			menu.toggle = true;
-			
+
 		};
 
 	}

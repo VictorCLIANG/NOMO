@@ -8,6 +8,12 @@ var self = Titanium.UI.currentWindow;
 
 var userId = self.userId;
 
+Ti.include("Loading.js");
+
+TiLoad.init({
+	rotate : false
+});
+
 var NavigationBar = require('ui/common/NavigationBar');
 if (friendList == null) {
 	var navBar = new NavigationBar('addFriendWin_empty');
@@ -66,10 +72,12 @@ var content = Ti.UI.createTableView({
 var sendFriendReq = Titanium.Network.createHTTPClient();
 
 sendFriendReq.onload = function(e) {
+	TiLoad.hide();
 };
 
 sendFriendReq.onerror = function() {
 	alert("Failed to connect to the server");
+	TiLoad.hide();
 };
 
 var searchFriendReq = Titanium.Network.createHTTPClient();
@@ -133,12 +141,15 @@ searchFriendReq.onload = function() {
 			rowData.push(rowContainer);
 		}
 	}
+	
+	TiLoad.hide();
+	
 	content.setData(rowData);
 	if (Ti.App.hasFriendOrPlan == 'false') {
 		self.remove(self.children[2]);
 	}
 	self.add(content);
-
+	
 	content.addEventListener('click', function(e) {
 
 		if (e.source.clickedItem == 'btn') {
@@ -147,13 +158,14 @@ searchFriendReq.onload = function() {
 			Ti.API.log("userId: " + Ti.App.cur_userId);
 			Ti.API.log("friendId: " + e.source.fid);
 			if (e.source.isSent == false) {
-				alert("A friend request will be send to " + e.source.fname);
+				alert("A friend request will be send to " + e.source.name);
 				sendFriendReq.open("GET", Ti.App.baseUrl + 'CreateFriendRequest');
 				var sendFriendReqPara = {
 					userId : Ti.App.cur_userId,
 					friendId : e.source.fid
 				};
 				sendFriendReq.send(sendFriendReqPara);
+				TiLoad.show();
 				e.source.image = "/images/friends_icsent@2x.png";
 			}
 		}
@@ -162,6 +174,7 @@ searchFriendReq.onload = function() {
 
 searchFriendReq.onerror = function() {
 	alert("Failed to connect to the server");
+	TiLoad.hide();
 };
 
 //-----------------when friend list is empty-------------------
@@ -221,9 +234,6 @@ if (Ti.App.hasFriendOrPlan == 'false') {
 
 //--------------------------------------------------------------
 
-//self.remove(self.children[2]);
-//self.add(content);
-
 searchBar.addEventListener('return', function() {
 
 	searchFriendReq.open("GET", Ti.App.baseUrl + 'GetNonFriends');
@@ -232,10 +242,8 @@ searchBar.addEventListener('return', function() {
 		searchString : searchBar.value
 	};
 	searchFriendReq.send(param);
-
-	//if (friendList == null) {
-	//	friendList = 'somthing';
-	//	self.fireEvent('open');
-	//}
+	
+	TiLoad.show();
+	
 });
 

@@ -6,6 +6,12 @@ var self = Ti.UI.currentWindow;
 
 self.id = 'FriendListWindow';
 
+Ti.include("Loading.js");
+
+TiLoad.init({
+	rotate : false
+});
+
 var getFriendListReq = Titanium.Network.createHTTPClient();
 var getFriendRequestReq = Titanium.Network.createHTTPClient();
 
@@ -103,6 +109,7 @@ rightBtnContainer.addEventListener('click', function() {
 		friendId : Ti.App.cur_userId
 	};
 	getFriendRequestReq.send(getRequestReqParam);
+	TiLoad.show();
 
 	tabContainer.remove(flist);
 	tabContainer.add(Rlist);
@@ -125,6 +132,7 @@ LeftBtn.addEventListener('click', function() {
 		userId : Ti.App.cur_userId
 	};
 	getFriendListReq.send(getFriendsReqParam);
+	TiLoad.show();
 
 	tabContainer.remove(Rlist);
 	tabContainer.add(flist);
@@ -251,11 +259,13 @@ getFriendListReq.onload = function() {
 		}
 
 	}
-
+	
+	TiLoad.hide();
 	flist.setData(f_rowData);
 };
 
 getFriendListReq.onerror = function() {
+	TiLoad.hide();
 	alert("Failed to connect to the server");
 };
 
@@ -365,11 +375,14 @@ getFriendRequestReq.onload = function() {
 		}
 		newNotificationLabel.show();
 	}
+	
+	TiLoad.hide();
 
 	Rlist.setData(r_rowData);
 };
 
 getFriendRequestReq.onerror = function() {
+	TiLoad.hide();
 	alert("Failed to connect to the server");
 };
 
@@ -378,9 +391,11 @@ getFriendRequestReq.onerror = function() {
 var acceptReq = Titanium.Network.createHTTPClient();
 
 acceptReq.onload = function() {
+	TiLoad.hide();
 };
 
 acceptReq.onerror = function() {
+	TiLoad.hide();
 	alert("Failed to connect to the server");
 };
 //----------Decline friends Requests----------
@@ -388,9 +403,11 @@ acceptReq.onerror = function() {
 var declineReq = Titanium.Network.createHTTPClient();
 
 declineReq.onload = function() {
+	TiLoad.hide();
 };
 
 declineReq.onerror = function() {
+	TiLoad.hide();
 	alert("Failed to connect to the server");
 };
 //----------Remove Friend request--------------
@@ -398,9 +415,11 @@ declineReq.onerror = function() {
 var removeFriendReq = Titanium.Network.createHTTPClient();
 
 removeFriendReq.onload = function() {
+	TiLoad.hide();
 };
 
 removeFriendReq.onerror = function() {
+	TiLoad.hide();
 	alert("Failed to connect to the server");
 };
 
@@ -436,6 +455,7 @@ Rlist.addEventListener('click', function(e) {
 					friendId : Ti.App.cur_userId
 				};
 				acceptReq.send(acceptReqParam);
+				TiLoad.show();
 				//r_data.splice(rowIndex, 1);
 				Rlist.deleteRow(rowIndex);
 			}
@@ -464,6 +484,8 @@ Rlist.addEventListener('click', function(e) {
 					friendId : Ti.App.cur_userId //-------its the otherway around-------
 				};
 				declineReq.send(declineReqParam);
+				
+				TiLoad.show();
 				//.splice(rowIndex, 1);
 				Rlist.deleteRow(rowIndex);
 			}
@@ -487,13 +509,13 @@ flist.addEventListener('click', function(e) {
 
 	Ti.API.log("Clicked On:" + clickedItem);
 	//Ti.API.log("Clicked On:" + e.source.children[1].visible);
-	if(clickedItem == 'row'){
-		if(e.source.children[1].visible == false){
+	if (clickedItem == 'row') {
+		if (e.source.children[1].visible == false) {
 			e.source.children[1].show();
-		}else{
+		} else {
 			e.source.children[1].hide();
 		}
-		
+
 	}
 
 	if (clickedItem == 'deleteBtn') {
@@ -510,12 +532,14 @@ flist.addEventListener('click', function(e) {
 				return false;
 			}
 			if (e1.index === 0) {
-				removeFriendReq.open("GET",Ti.App.baseUrl + 'RemoveFriend');
+				removeFriendReq.open("GET", Ti.App.baseUrl + 'RemoveFriend');
 				var removeFriendReqParam = {
 					userId : Ti.App.cur_userId,
 					friendId : friendId
 				};
 				removeFriendReq.send(removeFriendReqParam);
+				
+				TiLoad.show();
 				flist.deleteRow(rowIndex);
 				//.splice(rowIndex, 1);
 				Rlist.deleteRow(rowIndex);
@@ -537,6 +561,7 @@ var getFriendsReqParam = {
 };
 
 getFriendListReq.send(getFriendsReqParam);
+TiLoad.show();
 
 //-----------------------Determine if New! notification is shown on load---
 getFriendRequestReq.open("GET", Ti.App.baseUrl + 'getrequesters');
@@ -546,6 +571,7 @@ var getRequestReqParam = {
 getFriendRequestReq.send(getRequestReqParam);
 
 Ti.API.log(f_rowData);
+TiLoad.show();
 
 //------------------------------------------------------
 
