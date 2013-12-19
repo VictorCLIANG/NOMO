@@ -5,7 +5,7 @@ function LogIn() {
 
 	//var cur_win = Ti.UI.currentWindow;
 
-	var self = Ti.UI.createScrollView({
+	var self = Ti.UI.createWindow({
 		backgroundColor : '#424240'
 	});
 
@@ -87,11 +87,11 @@ function LogIn() {
 
 	loginReq.onload = function() {
 		var userId = this.responseText;
-
+		Ti.API.log("RETURNED USERID: '"+userId+"'");
 		if (userId != null) {
 			// assing user id to global variable
 			Ti.App.cur_userId = userId;
-
+			Ti.API.log("WHIN SUCCESS!");
 			checkFirstTimeReq.open("GET", url + 'hasFriendsorEvents');
 			var param = {
 				userId : userId
@@ -112,21 +112,26 @@ function LogIn() {
 		//var email = emailText.value;
 		//var password = passText.value;
 		//Ti.App.cur_userId = userId;
-		//Ti.API.log(email);
-		//Ti.API.log(password);
+		
 
-		//email = 'me@sush.co.nz';
+		var email;
+		var password;
+		
 		//email = 'jim@sush.co.nz';
-		//password = '1234';
-
+		email = emailText.value;
+		password = passText.value;
+		
+		Ti.API.log("EMAIL: '"+email+"'");
+		Ti.API.log("PWD: '"+password+"'");
+		
 		loginReq.open("GET", url + 'login');
 		var loginParam = {
-			email : emailText.value,
-			password : passText.value
+			email :email,
+			password : password
 		};
-
+		Ti.API.log("OPEND");
 		loginReq.send(loginParam);
-
+		Ti.API.log("WITHIN LOGIN");
 	});
 
 	//---------API for checking friendList----------
@@ -136,7 +141,7 @@ function LogIn() {
 		//var response = JSON.parse(json);
 
 		Ti.App.hasFriendOrPlan = response;
-
+		Ti.API.log("WHIN CHEKCER!");
 		if (response == 'true') {
 
 			var planWindow = Ti.UI.createWindow({
@@ -150,7 +155,7 @@ function LogIn() {
 				backgroundColor : '#f7f7f7'
 			});
 			planWindow.open();
-
+			Ti.API.log("CHEKER TRUE");
 		} else {
 			Ti.API.log("Current User " + Ti.App.cur_userId + " has NOOOOOO friends or events");
 
@@ -163,8 +168,9 @@ function LogIn() {
 				url : 'AddFriend.js',
 				userId : Ti.App.cur_userId
 			});
-
+			
 			AddFriendWindow.open();
+			Ti.API.log("CHEKER false");
 		}
 	};
 

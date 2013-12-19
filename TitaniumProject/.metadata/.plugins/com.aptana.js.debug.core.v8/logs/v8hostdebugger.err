@@ -29,3 +29,31 @@
 
 [Wed Dec 18 22:17:22 NZDT 2013] Connection closed
 [Wed Dec 18 22:21:14 NZDT 2013] Connection closed
+[Thu Dec 19 13:53:09 NZDT 2013] Connection closed
+[Thu Dec 19 13:58:06 NZDT 2013] Connection closed
+[Thu Dec 19 14:04:28 NZDT 2013] Connection closed
+[Thu Dec 19 14:22:47 NZDT 2013] org.chromium.sdk.internal.v8native.V8Helper$CallbackException: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:185)
+	at org.chromium.sdk.internal.v8native.V8Helper.callV8Sync(V8Helper.java:146)
+	at org.chromium.sdk.internal.v8native.DebugSession.startCommunication(DebugSession.java:281)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attachImpl(StandaloneVmImpl.java:146)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl.attach(StandaloneVmImpl.java:78)
+	at com.aptana.js.debug.core.v8.V8DebugHost.initSession(V8DebugHost.java:1272)
+	at com.aptana.js.debug.core.internal.model.AbstractDebugHost.start(AbstractDebugHost.java:199)
+	at com.aptana.js.debug.core.v8.V8DebugConnection.createConnection(V8DebugConnection.java:55)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.initiateDebuggerConnection(AndroidDebugLaunchHelper.java:297)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper.access$0(AndroidDebugLaunchHelper.java:269)
+	at com.appcelerator.titanium.mobile.ui.android.launch.AndroidDebugLaunchHelper$1.run(AndroidDebugLaunchHelper.java:99)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Exception: Failure: Connection closed
+	at org.chromium.sdk.internal.v8native.V8Helper$2.failure(V8Helper.java:162)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:153)
+	at org.chromium.sdk.internal.BaseCommandProcessor$1.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processEos(BaseCommandProcessor.java:119)
+	at org.chromium.sdk.internal.v8native.V8CommandProcessor.processEos(V8CommandProcessor.java:117)
+	at org.chromium.sdk.internal.standalonev8.StandaloneVmImpl$4.eosReceived(StandaloneVmImpl.java:103)
+	at org.chromium.sdk.internal.transport.SocketConnection$1.report(SocketConnection.java:105)
+	at org.chromium.sdk.internal.transport.SocketConnection$ResponseDispatcherThread.run(SocketConnection.java:209)
+
+[Thu Dec 19 14:25:32 NZDT 2013] Connection closed

@@ -27,6 +27,8 @@ if (Ti.version < 1.8 ) {
 	var isTablet = osname === 'ipad' || (osname === 'android' && (width > 2000 || height > 2000));
 	
 	var Window;
+	Window = require('ui/common/LogIn');
+	/*
 	if (isTablet) {
 		Window = require('ui/tablet/ApplicationWindow');
 	}
@@ -39,6 +41,7 @@ if (Ti.version < 1.8 ) {
 		else {
 			Window = require('ui/handheld/ApplicationWindow');
 		}
-	}
+	}*/
+	
 	new Window().open();
 })();
