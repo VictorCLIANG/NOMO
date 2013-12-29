@@ -1,9 +1,12 @@
-Android\ Emulator\ Process\:ConsoleLogLevel=Info
+=run
+Android\ Emulator\ Process\:ConsoleLogLevel=Trace
 FastDev\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1387411903323
-NoMo\:ConsoleLogLevel=Info
+LAST_LAUNCH_TIMESTAMP=1388289299352
+NoMo\:ConsoleLogLevel=Trace
+NoMo\:launchMode=run
+NoMo\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 eclipse.preferences.version=1
 preference.default.toolbar.visible_org.eclipse.debug.ui.DebugPerspective=true
 preference.show.console.onError=true
-preference.studio.perspective.toolbar.visible=true
-preference.studio.perspective.version=102
+preference.studio.perspective.toolbar.visible=false
+preference.studio.perspective.version=103

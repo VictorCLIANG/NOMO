@@ -8,11 +8,13 @@ function LogIn() {
 	var self = Ti.UI.createWindow({
 		backgroundColor : '#424240'
 	});
-	
+
 	Ti.include("Loading.js");
-	
-	TiLoad.init({ rotate: false });
-	
+
+	TiLoad.init({
+		rotate : false
+	});
+
 	var url = "http://experiment.sandbox.net.nz/nomoapi/nomoapi.svc/";
 
 	Ti.App.baseUrl = url;
@@ -87,11 +89,13 @@ function LogIn() {
 
 	var loginReq = Titanium.Network.createHTTPClient();
 
+	loginReq.setTimeout(6000);
+
 	var checkFirstTimeReq = Titanium.Network.createHTTPClient();
 
 	loginReq.onload = function() {
 		var userId = this.responseText;
-		Ti.API.log("RETURNED USERID: '"+userId+"'");
+		Ti.API.log("RETURNED USERID: '" + userId + "'");
 		if (userId != null) {
 			// assing user id to global variable
 			Ti.App.cur_userId = userId;
@@ -118,31 +122,29 @@ function LogIn() {
 		//var email = emailText.value;
 		//var password = passText.value;
 		//Ti.App.cur_userId = userId;
-		
 
 		var email;
 		var password;
-		
-		
+
 		email = emailText.value;
 		password = passText.value;
-		
+
 		//email = 'jim@sush.co.nz';
 		//password = '1234';
-		
-		Ti.API.log("EMAIL: '"+email+"'");
-		Ti.API.log("PWD: '"+password+"'");
-		
+
+		Ti.API.log("EMAIL: '" + email + "'");
+		Ti.API.log("PWD: '" + password + "'");
+
 		loginReq.open("GET", url + 'login');
 		var loginParam = {
-			email :email,
+			email : email,
 			password : password
 		};
 		Ti.API.log("OPEND");
 		loginReq.send(loginParam);
-		
+
 		TiLoad.show();
-		
+
 		Ti.API.log("WITHIN LOGIN");
 	});
 
@@ -181,7 +183,7 @@ function LogIn() {
 				url : 'AddFriend.js',
 				userId : Ti.App.cur_userId
 			});
-			
+
 			AddFriendWindow.open();
 			Ti.API.log("CHEKER false");
 		}

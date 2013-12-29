@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.appcelerator.titanium.mobile.ui.android.simulator.launchConfigurationType">
 <booleanAttribute key="ATTR_CLEAN_BEFORE_LAUNCH" value="false"/>
-<stringAttribute key="ATTR_LOG_LEVEL" value="Info"/>
+<stringAttribute key="ATTR_LOG_LEVEL" value="Trace"/>
 <stringAttribute key="ATTR_PROJECT_NAME" value="NoMo"/>
 <stringAttribute key="abi" value="x86"/>
+<stringAttribute key="device-id" value="Nexus4"/>
+<stringAttribute key="keystore_alias" value=""/>
+<stringAttribute key="keystore_password" value=""/>
+<stringAttribute key="keystore_path" value=""/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/NoMo"/>
 </listAttribute>
